@@ -1,77 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-    <!-- Add your styling links here (e.g., CSS files) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pallaw Pathak | Senior Android Engineer</title>
+  <!-- Materialize CSS & Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+  <style>
+    .brand-logo { font-size: 1.8rem; }
+    .section .header { margin-bottom: 1rem; }
+    .skills ul { columns: 2; list-style-type: disc; }
+  </style>
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="blue">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Pallaw Pathak</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Profession | <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    </header>
+  <!-- Hero -->
+  <div class="section center-align" style="padding: 50px 0;">
+    <h1 class="header">Senior Android Engineer</h1>
+    <p class="flow-text">KMP &amp; Compose Multiplatform Expert</p>
+    <div>
+      <a
+        class="btn blue waves-effect waves-light"
+        href="https://github.com/pallawpathak"
+        target="_blank"
+      >
+        <i class="material-icons left">code</i>GitHub
+      </a>
+      <a
+        class="btn blue waves-effect waves-light"
+        href="https://www.linkedin.com/in/pallawpathak/"
+        target="_blank"
+      >
+        <i class="material-icons left">person</i>LinkedIn
+      </a>
+      <a
+        class="btn blue waves-effect waves-light"
+        href="https://medium.com/@pallawpathak"
+        target="_blank"
+      >
+        <i class="material-icons left">edit</i>Medium
+      </a>
+    </div>
+  </div>
 
-    <!-- About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Introduce yourself here. This section should provide a brief overview of who you are and what you do.</p>
-    </section>
+  <!-- About -->
+  <div id="about" class="section grey lighten-5">
+    <div class="container">
+      <h2 class="header">About Me</h2>
+      <p>
+        I'm a Senior Android Engineer with over 10 years of experience in
+        mobile development. I specialize in Kotlin Multiplatform and Compose
+        Multiplatform, building clean, scalable architectures (MVVM, MVI) and
+        integrating robust Mobile DevOps pipelines with GitHub Actions. I love
+        mentoring teams, optimizing performance, and driving cross-platform
+        innovation.
+      </p>
+    </div>
+  </div>
 
-    <!-- Experience -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div>
-            <h3>Job Title #1</h3>
-            <p>Company, Dates From - To</p>
-            <ul>
-                <li>Briefly describe your responsibilities and achievements.</li>
-                <li>Highlight any major projects or contributions.</li>
-            </ul>
-        </div>
-        <!-- Repeat for other experiences -->
-    </section>
+  <!-- Experience -->
+  <div id="experience" class="section white">
+    <div class="container">
+      <h2 class="header">Experience</h2>
 
-    <!-- Education -->
-    <section id="education">
-        <h2>Education</h2>
-        <div>
-            <h3>Degree</h3>
-            <p>University Name, Graduation Year</p>
-            <!-- Add more education entries if needed -->
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
-            <!-- Add more skills as needed -->
+      <div class="section">
+        <h5>PayPay India — Senior Software Engineer</h5>
+        <p><em>Jan 2025 – May 2025</em></p>
+        <ul class="browser-default">
+          <li>Refactored CI/CD pipelines for the PAI SDK using GitHub Actions.</li>
+          <li>Implemented Gift Voucher Grant feature to boost engagement.</li>
+          <li>Won company hackathon for SmaToshi, a micro-investment feature.</li>
         </ul>
-    </section>
+      </div>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+      <div class="section">
+        <h5>PhysicsWallah — Senior Software Engineer</h5>
+        <p><em>Aug 2023 – Dec 2024</em></p>
+        <ul class="browser-default">
+          <li>Built AcadFly study abroad platform from scratch with KMP (10K+ downloads).</li>
+          <li>Led Android development for CuriousJunior (1M+ downloads).</li>
+          <li>Refactored legacy codebase into multi-module architecture, reducing build times by 30%.</li>
+        </ul>
+      </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>Connect with me on [social media links].</p>
-    </footer>
+      <div class="section">
+        <h5>Shipsy — Senior Software Engineer</h5>
+        <p><em>Aug 2020 – Jun 2023</em></p>
+        <ul class="browser-default">
+          <li>Refactored legacy Rider App using MVVM &amp; Clean Architecture.</li>
+          <li>Integrated barcode scanning in HubOps, cutting processing time by 40%.</li>
+          <li>Authored Android SOPs to establish coding best practices.</li>
+        </ul>
+      </div>
 
-    <!-- Add your scripts here (e.g., JavaScript files) -->
+      <div class="section">
+        <h5>Small World (Crafts Inc.) — Senior Software Engineer</h5>
+        <p><em>Aug 2019 – Mar 2020</em></p>
+        <ul class="browser-default">
+          <li>Launched job search &amp; visa assistance app for students in Japan (5K+ users).</li>
+        </ul>
+      </div>
 
+      <div class="section">
+        <h5>XBios — Software Engineer</h5>
+        <p><em>Sep 2017 – Jul 2019</em></p>
+        <ul class="browser-default">
+          <li>Contributed to large-scale e -commerce SDKs; promoted to SDE2.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h5>Recon AppMagic — Software Engineer</h5>
+        <p><em>May 2015 – Aug 2017</em></p>
+        <ul class="browser-default">
+          <li>Led end-to-end Android projects, collaborating on product roadmaps.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div id="projects" class="section grey lighten-5">
+    <div class="container">
+      <h2 class="header">Highlighted Projects</h2>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">SmaToshi (PayPay India)</span>
+              <p>Goal-based micro-investment feature that won the PayPay hackathon.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">AcadFly (PhysicsWallah)</span>
+              <p>Study abroad platform built with 85% shared KMP code, 4.0★ rating.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">CuriousJunior (PhysicsWallah)</span>
+              <p>Interactive learning app with 1M+ downloads and 96% crash-free rate.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">HubOps (Shipsy)</span>
+              <p>Middle-mile logistics app with barcode scanning integration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div id="skills" class="section white">
+    <div class="container">
+      <h2 class="header">Skills</h2>
+      <ul class="skills browser-default">
+        <li>Java &amp; Kotlin</li>
+        <li>Kotlin Multiplatform &amp; Compose Multiplatform</li>
+        <li>MVVM, MVI &amp; Clean Architecture</li>
+        <li>Coroutines &amp; Flow</li>
+        <li>Room, Retrofit &amp; Ktor</li>
+        <li>Dagger-Hilt &amp; Koin</li>
+        <li>GitHub Actions &amp; CI/CD</li>
+        <li>JUnit, Kotest &amp; MockK</li>
+        <li>Firebase Analytics &amp; Crashlytics</li>
+        <li>Figma &amp; Miro</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact" class="section grey lighten-5">
+    <div class="container">
+      <h2 class="header">Contact</h2>
+      <p>Email: <a href="mailto:pallaw.pathak@gmail.com">pallaw.pathak@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917696487712">+91 7696487712</a></p>
+      <a
+        class="waves-effect waves-light btn blue"
+        href="https://github.com/pallawpathak"
+        target="_blank"
+      >
+        <i class="material-icons left">code</i>View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer blue">
+    <div class="container center-align">
+      <p>&copy; 2025 Pallaw Pathak. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
