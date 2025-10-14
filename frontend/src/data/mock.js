@@ -93,7 +93,7 @@ export const experience = [
     company: "Small World (Crafts Inc.)",
     position: "Senior Software Engineer",
     duration: "Aug 2019 - Mar 2020",
-    location: "India",
+    location: "Nagoya, Japan (Remote)",
     responsibilities: [
       "Built Android app for students with job search, visa processing, and accommodation in Japan",
       "Reached 5K+ users within the first quarter"
