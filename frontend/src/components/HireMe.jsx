@@ -153,7 +153,7 @@ const HireMe = () => {
             </div>
           </div>
         </Card>
-      </div>
+        </div>
       </section>
 
       {/* Calendly Modal */}
