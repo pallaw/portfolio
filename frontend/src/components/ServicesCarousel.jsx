@@ -109,8 +109,8 @@ const ServicesCarousel = ({ services }) => {
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-1.5">
-                  {service.tags.slice(0, 3).map((tag, tagIdx) => (
+                <div className="flex flex-wrap gap-1.5 max-h-[4.5rem] overflow-hidden">
+                  {service.tags.map((tag, tagIdx) => (
                     <Badge
                       key={tagIdx}
                       className="bg-accent-red/10 text-accent-red border-accent-red/30 font-mono text-xs px-2 py-0.5"
@@ -118,11 +118,6 @@ const ServicesCarousel = ({ services }) => {
                       {tag}
                     </Badge>
                   ))}
-                  {service.tags.length > 3 && (
-                    <Badge className="bg-gray-700/50 text-gray-400 border-gray-600 font-mono text-xs px-2 py-0.5">
-                      +{service.tags.length - 3}
-                    </Badge>
-                  )}
                 </div>
               </div>
             </Card>
