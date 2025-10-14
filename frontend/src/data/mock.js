@@ -173,7 +173,7 @@ export const projects = [
     id: 1,
     name: "PayPay",
     description: "Japan's leading mobile payment platform. Contributed to SDK development, implemented Gift Voucher Grant feature, and won PayPay India Hackathon for SmaToshi - a goal-based micro-investment feature.",
-    image: "https://play-lh.googleusercontent.com/qMCW-FpJ1KxzN1Ql5rDRdGK8-r6xPLJxQi9QZdqQJxF2t8j9dK7qK8pK9qK7qK8p=w240-h480-rw",
+    image: "https://play-lh.googleusercontent.com/AieC1ypSSh_2rctvrNtVggyFRP9cNtvnEIPkVmzZGFlhN8bNdHCl3GZbxK7O8vCe7A=w240-h480-rw",
     technologies: ["Kotlin", "GitHub Actions", "CI/CD", "Android SDK"],
     metrics: {
       downloads: "10M+",
@@ -220,7 +220,7 @@ export const projects = [
     id: 4,
     name: "HubOps by Shipsy",
     description: "Middle-mile logistics management app. Integrated HHT barcode scanning, reducing processing time by 40%. Improved crash-free users from 75% to 93%.",
-    image: "https://play-lh.googleusercontent.com/placeholder-hubops",
+    image: "https://play-lh.googleusercontent.com/aWtMNzMSzvjr-tfORscKwHHPoJfkea-LbnxxKvyosudp7Bj0dIKSbBldpjMSFjo76w4=w240-h480-rw",
     technologies: ["Kotlin", "MVVM", "Barcode Scanning", "Dagger-Hilt", "Retrofit"],
     metrics: {
       downloads: "10K+",
@@ -236,7 +236,7 @@ export const projects = [
     id: 5,
     name: "FieldOps by Shipsy",
     description: "Field operations management solution for logistics teams. Built with scalable architecture and real-time tracking capabilities.",
-    image: "https://play-lh.googleusercontent.com/placeholder-fieldops",
+    image: "https://play-lh.googleusercontent.com/8cbfbn7OYCyDl3jcJm34iuh0qIsGkpqZ92TRCS2tNpJJLaOimgRBmvzlPiPMMMJwQ9ef=w240-h480-rw",
     technologies: ["Kotlin", "MVVM", "Google Maps", "Firebase", "Room"],
     metrics: {
       downloads: "5K+",
@@ -251,7 +251,7 @@ export const projects = [
     id: 6,
     name: "TMS Rider by Shipsy",
     description: "Transportation Management System for delivery partners. Focused on performance optimization and reliability for mission-critical operations.",
-    image: "https://play-lh.googleusercontent.com/placeholder-tms",
+    image: "https://play-lh.googleusercontent.com/qjq2WeZkN57elgL1jbzTxc7BJgtj205hKyrzfIg8dEwtrQjCEEzsBOfqCrzfVFE-hg=w240-h480-rw",
     technologies: ["Kotlin", "Clean Architecture", "Coroutines", "Retrofit"],
     metrics: {
       downloads: "5K+",
@@ -266,7 +266,7 @@ export const projects = [
     id: 7,
     name: "OnDemand by Shipsy",
     description: "On-demand delivery management platform. Implemented real-time order tracking and optimized routing algorithms.",
-    image: "https://play-lh.googleusercontent.com/placeholder-ondemand",
+    image: "https://play-lh.googleusercontent.com/iByeglWn9_Q6upqvHjBJ_IAj3fVAQ5amPmkeaAy5JLyXzE9OvyWa7xyPYhCit9vsiQ=w240-h480-rw",
     technologies: ["Kotlin", "MVVM", "Firebase", "Google Maps API"],
     metrics: {
       downloads: "3K+",
