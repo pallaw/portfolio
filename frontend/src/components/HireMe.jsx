@@ -9,14 +9,11 @@ import ServicesCarousel from './ServicesCarousel';
 const HireMe = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
-  const handleWhatsApp = () => {
-    const message = encodeURIComponent("Hi Pallaw, I'd like to discuss a potential opportunity with you.");
-    window.open(`https://wa.me/${personalInfo.whatsapp.replace(/[^0-9]/g, '')}?text=${message}`, '_blank');
-  };
-
-  const handleLinkedInMessage = () => {
-    // Try LinkedIn messaging, fallback to profile
-    window.open(personalInfo.linkedinMessaging || personalInfo.linkedin, '_blank');
+  const scrollToContact = () => {
+    const element = document.querySelector('#contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
