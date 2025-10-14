@@ -7,7 +7,7 @@ import { projects } from '../data/mock';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-[#0A0515]">
+    <section id="projects" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -22,7 +22,7 @@ const Projects = () => {
             {projects.map((project) => (
               <Card
                 key={project.id}
-                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-102 overflow-hidden group"
+                className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-102 overflow-hidden group"
               >
                 <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center overflow-hidden">
                   {project.image && !project.image.includes('placeholder') ? (

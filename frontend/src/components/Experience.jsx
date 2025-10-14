@@ -6,7 +6,7 @@ import { experience } from '../data/mock';
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-[#0A0515]">
+    <section id="experience" className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -29,7 +29,7 @@ const Experience = () => {
 
                   {/* Content card */}
                   <div className={`md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
-                    <Card className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 p-6 space-y-4">
+                    <Card className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 p-6 space-y-4">
                       <div className="flex items-start justify-between">
                         <div className="space-y-1">
                           <h3 className="text-xl font-bold text-white">{exp.position}</h3>

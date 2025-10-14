@@ -12,7 +12,7 @@ const iconMap = {
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-[#0F0820]">
+    <section id="about" className="py-20 bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -30,7 +30,7 @@ const About = () => {
               return (
                 <Card
                   key={index}
-                  className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-105 p-6"
+                  className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-105 p-6"
                 >
                   <div className="flex flex-col items-center text-center space-y-3">
                     <div className="p-3 bg-gradient-to-br from-accent-red/10 to-accent-purple/10 rounded-lg">

@@ -10,7 +10,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#0F0820] border-t border-gray-900 py-12">
+    <footer className="bg-gray-950 border-t border-gray-900 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center space-y-6">
           <div className="flex space-x-6">
@@ -22,7 +22,7 @@ const Footer = () => {
                   href={social.link}
                   target={social.label === 'Email' ? '_self' : '_blank'}
                   rel="noopener noreferrer"
-                  className="p-3 bg-[#1E123F]/50 rounded-lg border border-gray-800 hover:border-accent-red/50 hover:bg-accent-red/10 transition-all duration-300 hover:scale-110"
+                  className="p-3 bg-gray-900/50 rounded-lg border border-gray-800 hover:border-accent-red/50 hover:bg-accent-red/10 transition-all duration-300 hover:scale-110"
                   aria-label={social.label}
                 >
                   <Icon className="text-gray-400 hover:text-accent-red transition-colors" size={20} />

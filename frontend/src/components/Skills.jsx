@@ -12,7 +12,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-[#0F0820]">
+    <section id="skills" className="py-20 bg-gray-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -24,7 +24,7 @@ const Skills = () => {
             {skillCategories.map((category, index) => (
               <Card
                 key={index}
-                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 transition-all duration-300 p-6 space-y-4"
+                className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 transition-all duration-300 p-6 space-y-4"
               >
                 <h3 className="text-xl font-bold text-white">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
