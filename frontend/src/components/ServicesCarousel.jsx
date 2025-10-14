@@ -16,34 +16,33 @@ const iconMap = {
 const ServicesCarousel = ({ services }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   // Auto-play carousel
   useEffect(() => {
-    if (!isAutoPlaying) return;
+    if (!isAutoPlaying || isAnimating) return;
     
     const interval = setInterval(() => {
       handleNext();
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, services.length, currentIndex]);
+  }, [isAutoPlaying, isAnimating, currentIndex]);
 
   const handleNext = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    const maxIndex = services.length - 1;
-    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-    setTimeout(() => setIsTransitioning(false), 800);
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setCurrentIndex((prev) => (prev + 1) % services.length);
+    setTimeout(() => setIsAnimating(false), 800);
   };
 
   const handlePrev = () => {
-    if (isTransitioning) return;
+    if (isAnimating) return;
     setIsAutoPlaying(false);
-    setIsTransitioning(true);
-    const maxIndex = services.length - 1;
-    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
-    setTimeout(() => setIsTransitioning(false), 800);
+    setIsAnimating(true);
+    setCurrentIndex((prev) => (prev - 1 + services.length) % services.length);
+    setTimeout(() => setIsAnimating(false), 800);
   };
 
   const goToNext = () => {
@@ -55,17 +54,17 @@ const ServicesCarousel = ({ services }) => {
     handlePrev();
   };
 
-  // Get visible services (show 3 on desktop, 2 on tablet, 1 on mobile)
-  const getVisibleServices = () => {
-    const visible = [];
-    for (let i = 0; i < 3; i++) {
-      const index = (currentIndex + i) % services.length;
-      visible.push({ ...services[index], position: i });
+  // Get all services in correct order for continuous display
+  const getDisplayServices = () => {
+    const display = [];
+    for (let i = -1; i <= 3; i++) {
+      const index = (currentIndex + i + services.length) % services.length;
+      display.push({ ...services[index], offset: i });
     }
-    return visible;
+    return display;
   };
 
-  const visibleServices = getVisibleServices();
+  const displayServices = getDisplayServices();
 
   return (
     <div className="relative px-4 md:px-12">
