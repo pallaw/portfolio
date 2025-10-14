@@ -45,12 +45,9 @@ code {
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
         
-        /* Compose Multiplatform Brand Colors */
-        --compose-royal-blue: 226 90% 60%;  /* #3B63F5 */
-        --compose-medium-blue: 228 82% 65%; /* #597DF0 */
-        --compose-purple: 260 84% 62%; /* #7C4AF0 */
-        --compose-deep-indigo: 258 59% 18%; /* #1E123F */
-        --compose-bg-dark: 260 56% 3%; /* #0A0515 */
+        /* Original accent colors */
+        --accent-red: 355 100% 53%;  /* #FF0D29 */
+        --accent-purple: 258 83% 46%; /* #4E16D2 */
     }
   .dark {
         --background: 0 0% 3.9%;
