@@ -35,7 +35,7 @@ export const about = {
     {
       icon: "code",
       title: "85% Code Sharing",
-      description: "With KMP Architecture"
+      description: "With Kotlin Multiplatform (KMP)"
     }
   ],
   interests: [
