@@ -24,94 +24,50 @@ const Experience = () => {
                   key={exp.id}
                   className="relative pl-20 md:pl-0"
                 >
-                  <div className="md:w-1/2 md:pr-8">
-                    {index % 2 === 0 && (
-                      <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 p-6 space-y-4">
-                        <div className="flex items-start justify-between">
-                          <div className="space-y-1">
-                            <h3 className="text-xl font-bold text-white">{exp.position}</h3>
-                            <p className="text-cyan-400 font-semibold text-lg">{exp.company}</p>
-                          </div>
-                        </div>
-                        
-                        <div className="flex flex-wrap gap-3 text-sm text-gray-400">
-                          <span className="flex items-center gap-1">
-                            <Calendar size={16} className="text-cyan-400" />
-                            {exp.duration}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <MapPin size={16} className="text-cyan-400" />
-                            {exp.location}
-                          </span>
-                        </div>
+                  {/* Timeline dot */}
+                  <div className="absolute left-8 md:left-1/2 top-6 w-4 h-4 bg-gradient-to-br from-accent-red to-accent-purple rounded-full border-4 border-black shadow-lg shadow-accent-red/50 transform md:-translate-x-1/2 z-10"></div>
 
-                        <ul className="space-y-2 text-gray-400 text-sm">
-                          {exp.responsibilities.map((resp, idx) => (
-                            <li key={idx} className="flex items-start gap-2">
-                              <span className="text-cyan-400 mt-1">•</span>
-                              <span>{resp}</span>
-                            </li>
-                          ))}
-                        </ul>
-
-                        <div className="flex flex-wrap gap-2 pt-2">
-                          {exp.technologies.map((tech, idx) => (
-                            <Badge
-                              key={idx}
-                              className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30 hover:bg-cyan-500/20 font-mono text-xs"
-                            >
-                              {tech}
-                            </Badge>
-                          ))}
+                  {/* Content card */}
+                  <div className={`md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
+                    <Card className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 p-6 space-y-4">
+                      <div className="flex items-start justify-between">
+                        <div className="space-y-1">
+                          <h3 className="text-xl font-bold text-white">{exp.position}</h3>
+                          <p className="text-transparent bg-clip-text bg-gradient-to-r from-accent-red to-accent-purple font-semibold text-lg">{exp.company}</p>
                         </div>
-                      </Card>
-                    )}
-                  </div>
+                      </div>
+                      
+                      <div className="flex flex-wrap gap-3 text-sm text-gray-400">
+                        <span className="flex items-center gap-1">
+                          <Calendar size={16} className="text-accent-red" />
+                          {exp.duration}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin size={16} className="text-accent-red" />
+                          {exp.location}
+                        </span>
+                      </div>
 
-                  <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 -translate-y-1 w-4 h-4 bg-cyan-500 rounded-full border-4 border-black shadow-lg shadow-cyan-500/50"></div>
+                      <ul className="space-y-2 text-gray-400 text-sm">
+                        {exp.responsibilities.map((resp, idx) => (
+                          <li key={idx} className="flex items-start gap-2">
+                            <span className="text-accent-red mt-1">•</span>
+                            <span>{resp}</span>
+                          </li>
+                        ))}
+                      </ul>
 
-                  <div className="md:w-1/2 md:pl-8">
-                    {index % 2 !== 0 && (
-                      <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 p-6 space-y-4">
-                        <div className="flex items-start justify-between">
-                          <div className="space-y-1">
-                            <h3 className="text-xl font-bold text-white">{exp.position}</h3>
-                            <p className="text-cyan-400 font-semibold text-lg">{exp.company}</p>
-                          </div>
-                        </div>
-                        
-                        <div className="flex flex-wrap gap-3 text-sm text-gray-400">
-                          <span className="flex items-center gap-1">
-                            <Calendar size={16} className="text-cyan-400" />
-                            {exp.duration}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <MapPin size={16} className="text-cyan-400" />
-                            {exp.location}
-                          </span>
-                        </div>
-
-                        <ul className="space-y-2 text-gray-400 text-sm">
-                          {exp.responsibilities.map((resp, idx) => (
-                            <li key={idx} className="flex items-start gap-2">
-                              <span className="text-cyan-400 mt-1">•</span>
-                              <span>{resp}</span>
-                            </li>
-                          ))}
-                        </ul>
-
-                        <div className="flex flex-wrap gap-2 pt-2">
-                          {exp.technologies.map((tech, idx) => (
-                            <Badge
-                              key={idx}
-                              className="bg-cyan-500/10 text-cyan-400 border-cyan-500/30 hover:bg-cyan-500/20 font-mono text-xs"
-                            >
-                              {tech}
-                            </Badge>
-                          ))}
-                        </div>
-                      </Card>
-                    )}
+                      <div className="flex flex-wrap gap-2 pt-2">
+                        {exp.technologies.map((tech, idx) => (
+                          <Badge
+                            key={idx}
+                            className="bg-accent-red/10 text-accent-red border-accent-red/30 hover:bg-accent-red/20 font-mono text-xs"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
+                      </div>
+                    </Card>
                   </div>
                 </div>
               ))}
