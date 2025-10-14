@@ -32,7 +32,7 @@ const Skills = () => {
                   <div className="h-px w-12 bg-gradient-to-l from-transparent to-accent-red"></div>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                   {skills.languages.map((lang, idx) => (
                     <div
                       key={idx}
@@ -40,15 +40,15 @@ const Skills = () => {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
-                          <h4 className="text-2xl font-bold text-white mb-2 group-hover:text-accent-red transition-colors">
+                          <h4 className="text-xl font-bold text-white mb-2 group-hover:text-accent-red transition-colors leading-tight">
                             {lang.name}
                           </h4>
                           <div className="flex items-center gap-2">
                             <div className="text-accent-red font-semibold text-lg">{lang.years}+</div>
-                            <div className="text-gray-400 text-sm">years experience</div>
+                            <div className="text-gray-400 text-sm">years</div>
                           </div>
                         </div>
-                        <div className="text-6xl font-bold text-accent-red/10 group-hover:text-accent-red/20 transition-colors">
+                        <div className="text-5xl font-bold text-accent-red/10 group-hover:text-accent-red/20 transition-colors">
                           {lang.years}
                         </div>
                       </div>
@@ -57,7 +57,7 @@ const Skills = () => {
                       <div className="mt-4 h-1.5 bg-gray-700 rounded-full overflow-hidden">
                         <div 
                           className="h-full bg-gradient-to-r from-accent-red to-accent-purple rounded-full transition-all duration-1000"
-                          style={{ width: '100%' }}
+                          style={{ width: `${Math.min((lang.years / 10) * 100, 100)}%` }}
                         ></div>
                       </div>
                     </div>
