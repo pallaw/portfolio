@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { experience } from '../data/mock';
@@ -11,17 +11,18 @@ const Experience = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Experience</h2>
-            <div className="w-20 h-1 bg-cyan-500 mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
           </div>
 
-          <div className="relative">
-            <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-cyan-500 via-blue-500 to-transparent"></div>
+          <div className="relative max-w-5xl mx-auto">
+            {/* Timeline line */}
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-red via-accent-purple to-transparent transform md:-translate-x-1/2"></div>
 
             <div className="space-y-12">
               {experience.map((exp, index) => (
                 <div
                   key={exp.id}
-                  className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
+                  className="relative pl-20 md:pl-0"
                 >
                   <div className="md:w-1/2 md:pr-8">
                     {index % 2 === 0 && (
