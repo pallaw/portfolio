@@ -18,27 +18,21 @@ const HireMe = () => {
 
   return (
     <>
-      <section id="hire" className="py-20 bg-gradient-to-br from-gray-950 via-black to-gray-950 relative overflow-hidden">
+      <section id="hire" className="pt-16 pb-8 md:pt-20 md:pb-12 bg-gradient-to-br from-gray-950 via-black to-gray-950 relative overflow-hidden scroll-mt-20">
         {/* Background gradient effects */}
         <div className="absolute inset-0 bg-gradient-to-r from-accent-red/5 via-accent-purple/5 to-accent-red/5 blur-3xl"></div>
         
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="space-y-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="space-y-6 md:space-y-8">
           {/* Header */}
-          <div className="text-center space-y-4">
+          <div className="text-center space-y-2">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
               {hireMe.title}
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
-            <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-300 text-base sm:text-lg max-w-4xl mx-auto leading-relaxed px-4">
               {hireMe.description}
             </p>
-            
-            {/* Availability Status */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-red/10 border border-accent-red/30">
-              <span className="w-2 h-2 rounded-full bg-accent-red"></span>
-              <span className="text-accent-red font-medium">{hireMe.availability}</span>
-            </div>
           </div>
 
           {/* Services Carousel */}
@@ -46,25 +40,33 @@ const HireMe = () => {
             <ServicesCarousel services={hireMe.services} />
           </div>
 
+          {/* Availability Status */}
+          <div className="text-center py-2">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-red/10 border border-accent-red/30">
+              <span className="w-2 h-2 rounded-full bg-accent-red animate-pulse"></span>
+              <span className="text-accent-red font-medium text-sm">{hireMe.availability}</span>
+            </div>
+          </div>
+
           {/* Primary CTA - Schedule a Call */}
-          <div className="max-w-md mx-auto">
+          <div className="max-w-sm sm:max-w-md mx-auto px-4">
             <Button
-              className="w-full bg-gradient-to-r from-accent-red to-accent-purple hover:from-accent-red/90 hover:to-accent-purple/90 text-white border-0 shadow-2xl shadow-accent-red/30 hover:shadow-accent-red/50 transition-all px-10 py-8 text-xl font-semibold group"
+              className="w-full bg-gradient-to-r from-accent-red to-accent-purple hover:from-accent-red/90 hover:to-accent-purple/90 text-white border-0 shadow-2xl shadow-accent-red/30 hover:shadow-accent-red/50 transition-all px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg font-semibold group"
               onClick={() => setIsCalendlyOpen(true)}
             >
-              <Calendar className="mr-3 group-hover:scale-110 transition-transform" size={28} />
+              <Calendar className="mr-2 sm:mr-3 group-hover:scale-110 transition-transform" size={20} />
               Schedule a Call
             </Button>
           </div>
 
           {/* Quick Contact Section */}
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-6">
-              <p className="text-gray-400 text-sm uppercase tracking-wider mb-6">Prefer a Quick Message?</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="max-w-2xl mx-auto px-4">
+            <div className="text-center mb-4">
+              <p className="text-gray-400 text-xs sm:text-sm uppercase tracking-wider mb-4">Prefer a Quick Message?</p>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <Button
                   variant="outline"
-                  className="bg-gray-900/50 hover:bg-gray-800 text-white border-gray-700 hover:border-green-500/50 transition-all px-8 py-6 text-base group"
+                  className="bg-gray-900/50 hover:bg-gray-800 text-white border-gray-700 hover:border-green-500/50 transition-all px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base group"
                   onClick={() => {
                     const message = encodeURIComponent("Hi Pallaw, I'd like to discuss a potential opportunity with you.");
                     window.open(`https://wa.me/${personalInfo.whatsapp.replace(/[^0-9]/g, '')}?text=${message}`, '_blank');
@@ -78,7 +80,7 @@ const HireMe = () => {
                 
                 <Button
                   variant="outline"
-                  className="bg-gray-900/50 hover:bg-gray-800 text-white border-gray-700 hover:border-blue-500/50 transition-all px-8 py-6 text-base group"
+                  className="bg-gray-900/50 hover:bg-gray-800 text-white border-gray-700 hover:border-blue-500/50 transition-all px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base group"
                   onClick={() => window.open(personalInfo.linkedinMessaging || personalInfo.linkedin, '_blank')}
                 >
                   <svg className="mr-2 group-hover:scale-110 transition-transform" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

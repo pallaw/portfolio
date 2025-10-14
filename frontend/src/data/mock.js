@@ -288,8 +288,8 @@ export const projects = [
 
 export const hireMe = {
   title: "Let's Work Together",
-  description: "I help companies build scalable cross-platform mobile applications using Kotlin Multiplatform and Compose Multiplatform. With a decade of experience delivering high-impact products, I bring technical expertise and leadership to drive your mobile strategy forward.",
-  availability: "Open to new opportunities",
+  description: "I specialize in building scalable cross-platform mobile applications using Kotlin Multiplatform and Compose Multiplatform. With over a decade of experience delivering high-impact products, I bring deep technical expertise and proven leadership to drive your mobile strategy forward.",
+  availability: "Available for consulting & leadership roles",
   cta: "Let's Connect",
   services: [
     {

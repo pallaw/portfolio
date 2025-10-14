@@ -48,8 +48,13 @@ const Skills = () => {
                             <div className="text-gray-400 text-sm">years experience</div>
                           </div>
                         </div>
-                        <div className="text-6xl font-bold text-blue-500/10 group-hover:text-blue-400/20 transition-colors">
-                          {lang.rating}
+                        <div className="text-right">
+                          <div className="text-3xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
+                            {lang.rating}/{lang.maxRating}
+                          </div>
+                          <div className="text-xs text-gray-400 mt-1">
+                            Skill Level
+                          </div>
                         </div>
                       </div>
                       
