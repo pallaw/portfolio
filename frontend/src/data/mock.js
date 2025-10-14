@@ -267,7 +267,7 @@ export const projects = [
 export const articles = [
   {
     id: 1,
-    title: "Unified UI with CMP: Getting Started with Compose Multiplatform 'Hello World'",
+    title: "Unified UI with Compose Multiplatform (CMP): Getting Started with Compose Multiplatform 'Hello World'",
     excerpt: "Ready to build one app that works on Android, iOS, and desktop? Compose Multiplatform lets you share UI code across platforms.",
     date: "Oct 11, 2024",
     readTime: "5 min read",
