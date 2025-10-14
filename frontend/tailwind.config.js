@@ -38,13 +38,8 @@ module.exports = {
   			accent: {
   				DEFAULT: 'hsl(var(--accent))',
   				foreground: 'hsl(var(--accent-foreground))',
-  				compose: {
-  					royal: 'hsl(var(--compose-royal-blue))',
-  					medium: 'hsl(var(--compose-medium-blue))',
-  					purple: 'hsl(var(--compose-purple))',
-  					indigo: 'hsl(var(--compose-deep-indigo))',
-  					bg: 'hsl(var(--compose-bg-dark))'
-  				}
+  				red: 'hsl(var(--accent-red))',
+  				purple: 'hsl(var(--accent-purple))'
   			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
