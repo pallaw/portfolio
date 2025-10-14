@@ -117,7 +117,7 @@ export const experience = [
     company: "Recon AppMagic",
     position: "Software Engineer",
     duration: "May 2015 - Aug 2017",
-    location: "India",
+    location: "Gurugram",
     responsibilities: [
       "Independently led Android projects from concept to deployment",
       "Collaborated with product teams for scalable delivery"
