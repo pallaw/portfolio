@@ -227,8 +227,7 @@ export const projects = [
     technologies: ["Kotlin", "MVVM", "Barcode Scanning", "Dagger-Hilt", "Retrofit"],
     metrics: {
       downloads: "10K+",
-      rating: "4.3",
-      crashFree: "93%"
+      rating: "4.3"
     },
     links: {
       playStore: "https://play.google.com/store/apps/details?id=in.shipsy.riderapp.hubOps&hl=en_IN"
