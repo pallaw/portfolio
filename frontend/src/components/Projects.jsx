@@ -52,10 +52,12 @@ const Projects = () => {
                   </p>
 
                   {project.metrics && (
-                    <div className="flex justify-between items-center py-3 border-t border-b border-gray-800 px-4">
+                    <div className="flex justify-between items-center py-3 border-t border-b border-gray-800 px-6">
                       {project.metrics.downloads && (
-                        <div className="flex items-center gap-2">
-                          <Download className="text-accent-red" size={16} />
+                        <div className="flex items-center gap-3">
+                          <div className="p-2 rounded-lg border border-accent-red/30 bg-accent-red/5">
+                            <Download className="text-accent-red" size={16} />
+                          </div>
                           <div>
                             <p className="text-white font-semibold text-sm">{project.metrics.downloads}</p>
                             <p className="text-gray-500 text-xs">Downloads</p>
@@ -63,12 +65,14 @@ const Projects = () => {
                         </div>
                       )}
                       {project.metrics.rating && (
-                        <div className="flex items-center gap-2">
-                          <div className="text-right">
+                        <div className="flex items-center gap-3">
+                          <div className="p-2 rounded-lg border border-accent-purple/30 bg-accent-purple/5">
+                            <Star className="text-accent-purple" size={16} />
+                          </div>
+                          <div>
                             <p className="text-white font-semibold text-sm">{project.metrics.rating}</p>
                             <p className="text-gray-500 text-xs">Rating</p>
                           </div>
-                          <Star className="text-accent-red" size={16} />
                         </div>
                       )}
                     </div>
