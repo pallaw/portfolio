@@ -1,37 +1,54 @@
 import React from 'react';
-import { Mail, Linkedin, Github, Phone } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone, MessageCircle } from 'lucide-react';
 import { Card } from './ui/card';
 import { personalInfo } from '../data/mock';
 
 const Contact = () => {
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent("Hi Pallaw, I'd like to discuss a potential opportunity with you.");
+    window.open(`https://wa.me/${personalInfo.whatsapp.replace(/[^0-9]/g, '')}?text=${message}`, '_blank');
+  };
+
   const contactMethods = [
     {
       icon: Mail,
       label: 'Email',
       value: personalInfo.email,
       link: `mailto:${personalInfo.email}`,
-      color: 'red'
+      color: 'red',
+      action: null
+    },
+    {
+      icon: MessageCircle,
+      label: 'WhatsApp',
+      value: 'Quick Chat',
+      link: null,
+      color: 'green',
+      action: handleWhatsApp
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
-      link: personalInfo.linkedin,
-      color: 'purple'
+      link: personalInfo.linkedinMessaging || personalInfo.linkedin,
+      color: 'blue',
+      action: null
     },
     {
       icon: Github,
       label: 'GitHub',
       value: 'View My Code',
       link: personalInfo.github,
-      color: 'red'
+      color: 'purple',
+      action: null
     },
     {
       icon: Phone,
       label: 'Phone',
       value: personalInfo.phone,
       link: `tel:${personalInfo.phone}`,
-      color: 'purple'
+      color: 'red',
+      action: null
     }
   ];
 
