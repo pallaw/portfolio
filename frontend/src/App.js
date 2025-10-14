@@ -37,7 +37,7 @@ function App() {
   return (
     <ThemeProvider theme={md3Theme}>
       <CssBaseline />
-      <div className=\"App\" style={{ backgroundColor: '#0D0D0D', minHeight: '100vh' }}>
+      <div className="App" style={{ backgroundColor: '#0D0D0D', minHeight: '100vh' }}>
         <Header />
         <main>
           <HeroMD3 />
