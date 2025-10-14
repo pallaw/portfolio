@@ -30,7 +30,7 @@ const Contact = () => {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
-      link: personalInfo.linkedinMessaging || personalInfo.linkedin,
+      link: personalInfo.linkedin,
       color: 'blue',
       action: null
     },
