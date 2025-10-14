@@ -22,93 +22,112 @@ const ServicesCarousel = ({ services }) => {
     if (!isAutoPlaying) return;
     
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % services.length);
-    }, 5000);
+      setCurrentIndex((prev) => {
+        const maxIndex = services.length - 1;
+        return prev >= maxIndex ? 0 : prev + 1;
+      });
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, services.length]);
 
   const goToNext = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prev) => (prev + 1) % services.length);
+    const maxIndex = services.length - 1;
+    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
   };
 
   const goToPrev = () => {
     setIsAutoPlaying(false);
-    setCurrentIndex((prev) => (prev - 1 + services.length) % services.length);
+    const maxIndex = services.length - 1;
+    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
   };
 
-  const goToSlide = (index) => {
-    setIsAutoPlaying(false);
-    setCurrentIndex(index);
+  // Get visible services (show 3 on desktop, 2 on tablet, 1 on mobile)
+  const getVisibleServices = () => {
+    const visible = [];
+    for (let i = 0; i < 3; i++) {
+      const index = (currentIndex + i) % services.length;
+      visible.push(services[index]);
+    }
+    return visible;
   };
 
-  const currentService = services[currentIndex];
-  const IconComponent = iconMap[currentService.icon];
+  const visibleServices = getVisibleServices();
 
   return (
-    <div className="relative">
-      {/* Main Carousel Card */}
-      <Card className="bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-800 p-8 md:p-10 min-h-[320px] relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-accent-red/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-accent-purple/5 rounded-full blur-3xl"></div>
-
-        <div className="relative z-10 flex flex-col h-full">
-          {/* Icon and Title */}
-          <div className="flex items-start gap-4 mb-6">
-            <div className="flex-shrink-0 p-4 rounded-xl bg-gradient-to-br from-accent-red/20 to-accent-purple/20 border border-accent-red/30">
-              <IconComponent className="text-accent-red" size={32} />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                {currentService.title}
-              </h3>
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <span>{currentIndex + 1}</span>
-                <span>/</span>
-                <span>{services.length}</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Description */}
-          <p className="text-gray-300 text-lg leading-relaxed mb-6 flex-1">
-            {currentService.description}
-          </p>
-
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2">
-            {currentService.tags.map((tag, idx) => (
-              <Badge
-                key={idx}
-                className="bg-accent-red/10 text-accent-red border-accent-red/30 font-mono text-xs"
-              >
-                {tag}
-              </Badge>
-            ))}
-          </div>
-        </div>
-      </Card>
-
+    <div className="relative px-4 md:px-12">
       {/* Navigation Buttons */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between px-2 pointer-events-none">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={goToPrev}
-          className="pointer-events-auto bg-gray-900/90 border-gray-700 hover:bg-gray-800 hover:border-accent-red/50 text-white shadow-xl"
-        >
-          <ChevronLeft size={20} />
-        </Button>
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={goToNext}
-          className="pointer-events-auto bg-gray-900/90 border-gray-700 hover:bg-gray-800 hover:border-accent-red/50 text-white shadow-xl"
-        >
-          <ChevronRight size={20} />
-        </Button>
+      <Button
+        variant="outline"
+        size="icon"
+        onClick={goToPrev}
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-gray-900/90 border-gray-700 hover:bg-gray-800 hover:border-accent-red/50 text-white shadow-xl"
+      >
+        <ChevronLeft size={20} />
+      </Button>
+      
+      <Button
+        variant="outline"
+        size="icon"
+        onClick={goToNext}
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-gray-900/90 border-gray-700 hover:bg-gray-800 hover:border-accent-red/50 text-white shadow-xl"
+      >
+        <ChevronRight size={20} />
+      </Button>
+
+      {/* Carousel Items */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        {visibleServices.map((service, idx) => {
+          const IconComponent = iconMap[service.icon];
+          const actualIndex = (currentIndex + idx) % services.length;
+          
+          return (
+            <Card
+              key={actualIndex}
+              className="bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-800 hover:border-accent-red/50 p-6 relative overflow-hidden group transition-all duration-300 hover:scale-105"
+            >
+              {/* Background decoration */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent-red/5 rounded-full blur-2xl group-hover:bg-accent-red/10 transition-all"></div>
+
+              <div className="relative z-10 flex flex-col h-full min-h-[240px]">
+                {/* Icon and Title */}
+                <div className="flex items-start gap-3 mb-4">
+                  <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-br from-accent-red/20 to-accent-purple/20 border border-accent-red/30 group-hover:scale-110 transition-transform">
+                    <IconComponent className="text-accent-red" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-white mb-1 leading-tight">
+                      {service.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-1">
+                  {service.description}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-1.5">
+                  {service.tags.slice(0, 3).map((tag, tagIdx) => (
+                    <Badge
+                      key={tagIdx}
+                      className="bg-accent-red/10 text-accent-red border-accent-red/30 font-mono text-xs px-2 py-0.5"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                  {service.tags.length > 3 && (
+                    <Badge className="bg-gray-700/50 text-gray-400 border-gray-600 font-mono text-xs px-2 py-0.5">
+                      +{service.tags.length - 3}
+                    </Badge>
+                  )}
+                </div>
+              </div>
+            </Card>
+          );
+        })}
       </div>
 
       {/* Dots Indicator */}
@@ -116,7 +135,10 @@ const ServicesCarousel = ({ services }) => {
         {services.map((_, index) => (
           <button
             key={index}
-            onClick={() => goToSlide(index)}
+            onClick={() => {
+              setIsAutoPlaying(false);
+              setCurrentIndex(index);
+            }}
             className={`h-2 rounded-full transition-all duration-300 ${
               index === currentIndex
                 ? 'w-8 bg-accent-red'
