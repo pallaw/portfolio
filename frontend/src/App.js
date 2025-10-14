@@ -33,22 +33,19 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider theme={md3Theme}>
-      <CssBaseline />
-      <div className="App" style={{ backgroundColor: '#0D0D0D', minHeight: '100vh' }}>
-        <Header />
-        <main>
-          <HeroMD3 />
-          <AboutMD3 />
-          <Experience />
-          <SkillsMD3 />
-          <Projects />
-          <Blog />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="App bg-black min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Blog />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
