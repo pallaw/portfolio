@@ -162,7 +162,6 @@ const HireMe = () => {
         calendlyUrl={personalInfo.calendly}
       />
     </section>
-    </>
   );
 };
 
