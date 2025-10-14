@@ -233,7 +233,7 @@ export const projects = [
     company: "Shipsy"
   },
   {
-    id: 4,
+    id: 5,
     name: "FieldOps by Shipsy",
     description: "Field operations management solution for logistics teams. Built with scalable architecture and real-time tracking capabilities.",
     image: "https://play-lh.googleusercontent.com/placeholder-fieldops",
