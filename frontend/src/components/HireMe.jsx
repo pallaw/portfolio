@@ -154,7 +154,15 @@ const HireMe = () => {
           </div>
         </Card>
       </div>
+
+      {/* Calendly Modal */}
+      <CalendlyModal 
+        isOpen={isCalendlyOpen} 
+        onClose={() => setIsCalendlyOpen(false)}
+        calendlyUrl={personalInfo.calendly}
+      />
     </section>
+    </>
   );
 };
 
