@@ -127,7 +127,10 @@ export const experience = [
 ];
 
 export const skills = {
-  languages: ["Kotlin", "Java"],
+  languages: [
+    { name: "Kotlin", years: 10 },
+    { name: "Java", years: 10 }
+  ],
   frameworks: [
     "Kotlin Multiplatform (KMP)",
     "Compose Multiplatform (CMP)",
