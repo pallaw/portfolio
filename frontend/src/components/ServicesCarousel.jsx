@@ -134,7 +134,7 @@ const ServicesCarousel = ({ services }) => {
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-1.5 max-h-[4.5rem] overflow-hidden">
+                <div className="flex flex-wrap gap-1.5 max-h-[5rem] overflow-hidden">
                   {service.tags.map((tag, tagIdx) => (
                     <Badge
                       key={tagIdx}
