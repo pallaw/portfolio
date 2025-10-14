@@ -105,7 +105,7 @@ export const experience = [
     company: "XBios",
     position: "Software Engineer",
     duration: "Sep 2017 - Jul 2019",
-    location: "India",
+    location: "Gurugram",
     responsibilities: [
       "Contributed to feature development and SDK maintenance for large-scale e-commerce apps",
       "Promoted from SDE1 to SDE2 based on performance"
