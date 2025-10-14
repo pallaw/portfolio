@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-[#3B63F5] to-[#597DF0] hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-[#3B63F5]/30 hover:shadow-[#3B63F5]/50 hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-accent-red to-accent-purple hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-red/20 hover:shadow-accent-red/40 hover:scale-105 transition-all duration-300"
                 onClick={scrollToContact}
               >
                 Get In Touch
@@ -58,7 +58,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#597DF0] text-white hover:bg-[#3B63F5]/20 hover:border-[#3B63F5] font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
+                className="border-2 border-gray-700 text-white hover:bg-gray-900 hover:border-accent-red font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
                 onClick={() => window.open('https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/6a2xfnkv_Pallaw_Pathak_Senior_Android_Resume.pdf', '_blank')}
               >
                 <Download className="mr-2" size={20} />
