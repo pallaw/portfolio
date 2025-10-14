@@ -5,7 +5,7 @@ import { skills } from '../data/mock';
 
 const Skills = () => {
   const skillCategories = [
-    { title: 'Languages', items: skills.languages, color: 'red' },
+    { title: 'Languages', items: skills.languages, color: 'red', showYears: true },
     { title: 'Frameworks & Libraries', items: [...skills.frameworks, ...skills.libraries], color: 'red' },
     { title: 'Architecture & Patterns', items: skills.architecture, color: 'red' },
     { title: 'Tools & Practices', items: [...skills.tools, ...skills.practices], color: 'red' }
