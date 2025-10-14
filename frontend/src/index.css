@@ -45,9 +45,9 @@ code {
         --chart-5: 27 87% 67%;
         --radius: 0.5rem;
         
-        /* Custom accent colors */
-        --accent-red: 355 100% 53%;  /* #FF0D29 */
-        --accent-purple: 258 83% 46%; /* #4E16D2 */
+        /* JetBrains accent colors */
+        --accent-jetbrains: 255 76% 69%;  /* #7B61FF */
+        --accent-pink: 338 100% 70%; /* #FF6B9D */
     }
   .dark {
         --background: 0 0% 3.9%;
