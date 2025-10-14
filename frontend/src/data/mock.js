@@ -8,9 +8,12 @@ export const personalInfo = {
   profileImage: "https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/zv3h7a9v_profile-pic%20%283%29.png",
   email: "pallaw.pathak@gmail.com",
   phone: "+917696487712",
+  whatsapp: "+917696487712",
   linkedin: "https://www.linkedin.com/in/pallawpathak/",
+  linkedinMessaging: "https://www.linkedin.com/messaging/compose/?recipient=pallawpathak",
   github: "https://github.com/pallaw",
   medium: "https://medium.com/@pallawpathak",
+  calendly: "https://calendly.com/pallaw-pathak/30min?hide_event_type_details=1&hide_gdpr_banner=1",
   location: "India"
 };
 
