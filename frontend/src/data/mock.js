@@ -3,8 +3,8 @@
 export const personalInfo = {
   name: "Pallaw Pathak",
   title: "Senior Android Engineer | Kotlin & Compose Multiplatform Expert",
-  subtitle: "10+ Years Experience | KMP & Cross-Platform Architecture Specialist",
-  bio: "Senior Android Engineer with over 10 years of experience specializing in Kotlin Multiplatform (KMP) and Compose Multiplatform. Proven expertise in designing clean, scalable architecture using patterns like MVVM and MVI, and optimizing app performance across platforms.",
+  subtitle: "10+ Years Experience | Kotlin Multiplatform (KMP) & Cross-Platform Architecture Specialist",
+  bio: "Senior Android Engineer with over 10 years of experience specializing in Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP). Proven expertise in designing clean, scalable architecture using patterns like MVVM and MVI, and optimizing app performance across platforms.",
   profileImage: "https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/zv3h7a9v_profile-pic%20%283%29.png",
   email: "pallaw.pathak@gmail.com",
   phone: "+917696487712",
