@@ -6,7 +6,7 @@ import { articles } from '../data/mock';
 
 const Blog = () => {
   return (
-    <section id="blog" className="py-20 bg-gray-950">
+    <section id="blog" className="py-20 bg-[#0F0820]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -21,7 +21,7 @@ const Blog = () => {
             {articles.map((article) => (
               <Card
                 key={article.id}
-                className="bg-gray-900/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
+                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
                 onClick={() => window.open(article.link, '_blank')}
               >
                 <div className="relative h-48 overflow-hidden bg-gray-800">

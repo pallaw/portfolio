@@ -36,7 +36,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-black">
+    <section id="contact" className="py-20 bg-[#0A0515]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center space-y-4">
@@ -53,7 +53,7 @@ const Contact = () => {
               return (
                 <Card
                   key={index}
-                  className="bg-gray-900/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
+                  className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
                   onClick={() => window.open(method.link, method.label === 'Email' || method.label === 'Phone' ? '_self' : '_blank')}
                 >
                   <div className="flex flex-col items-center text-center space-y-3">

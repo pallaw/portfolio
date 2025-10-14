@@ -58,7 +58,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-gray-700 text-white hover:bg-gray-900 hover:border-accent-compose-royal font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
+                className="border-2 border-gray-700 text-white hover:bg-[#1E123F] hover:border-accent-compose-royal font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
                 onClick={() => window.open('https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/6a2xfnkv_Pallaw_Pathak_Senior_Android_Resume.pdf', '_blank')}
               >
                 <Download className="mr-2" size={20} />
