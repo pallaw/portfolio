@@ -173,7 +173,7 @@ export const projects = [
     id: 1,
     name: "AcadFly",
     description: "Study Abroad Platform built from scratch with Kotlin Multiplatform. Achieved 85% code sharing between Android and iOS, resulting in faster development and consistent UX.",
-    image: "https://play-lh.googleusercontent.com/VX8gN0qZMBJz3LJLQwE5LHLKjJ0Q8ZK9x_8K7bHBvW5kZwQBQJTJmWZvQJ7gJqZQJQ=w240-h480-rw",
+    image: "https://play-lh.googleusercontent.com/UTBbl7ZiI-gXLtij7LqzFVk1R6HhwI9dqT9IYUt7fyjoz3eFfxxjhrTFmQ6y-p2cgrk=w240-h480-rw",
     technologies: ["KMP", "Compose Multiplatform", "Ktor", "Koin", "MVVM"],
     metrics: {
       downloads: "10K+",
@@ -181,7 +181,7 @@ export const projects = [
       crashFree: "99.75%"
     },
     links: {
-      playStore: "https://play.google.com/store/search?q=acadfly&c=apps&hl=en_IN"
+      playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.unigo&hl=en_IN"
     },
     type: "professional"
   },
@@ -189,7 +189,7 @@ export const projects = [
     id: 2,
     name: "PhysicsWallah",
     description: "Core contributor to India's leading EdTech platform. Worked on critical features, performance optimization, and architecture improvements for the main application.",
-    image: "https://play-lh.googleusercontent.com/RkHRvJU_9K5JvnL5EJqKZdQ7qBsLJ5pLnZqKQJLqKJZqZqKJqKJqKJqKJqKJqKJqKJ=w240-h480-rw",
+    image: "https://play-lh.googleusercontent.com/x5_bJXO_-4zH95U6-GSmZPHWX7iFe1JPmfGe26kV2fVrZS5Ebi7L_VFIOopAQ3XBDg=w240-h480-rw",
     technologies: ["Kotlin", "Jetpack Compose", "Multi-module", "Coroutines", "Clean Architecture"],
     metrics: {
       downloads: "1M+",
