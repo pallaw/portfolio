@@ -98,7 +98,7 @@ const ServicesCarousel = ({ services }) => {
           return (
             <Card
               key={actualIndex}
-              className={`bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-800 hover:border-accent-red/50 p-6 relative overflow-hidden group transition-all duration-500 ease-out ${
+              className={`bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-800 hover:border-accent-red/50 p-6 relative overflow-hidden group transition-all duration-700 ease-in-out ${
                 isCenter 
                   ? 'scale-110 lg:scale-115 border-accent-red/30 shadow-xl shadow-accent-red/20 z-10' 
                   : 'scale-95 lg:scale-100 opacity-80 hover:opacity-100'
