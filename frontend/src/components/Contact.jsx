@@ -41,7 +41,7 @@ const Contact = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Let's Connect</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-jetbrains to-accent-pink mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
               I'm always open to discussing new projects, opportunities, or just having a chat about technology
             </p>
@@ -53,14 +53,14 @@ const Contact = () => {
               return (
                 <Card
                   key={index}
-                  className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
+                  className="bg-gray-900/50 border-gray-800 hover:border-accent-jetbrains/50 hover:shadow-lg hover:shadow-accent-jetbrains/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
                   onClick={() => window.open(method.link, method.label === 'Email' || method.label === 'Phone' ? '_self' : '_blank')}
                 >
                   <div className="flex flex-col items-center text-center space-y-3">
                     <div className={`p-4 rounded-lg ${
-                      method.color === 'red' ? 'bg-accent-red/10' : 'bg-accent-purple/10'
+                      method.color === 'red' ? 'bg-accent-jetbrains/10' : 'bg-accent-pink/10'
                     }`}>
-                      <Icon className={method.color === 'red' ? 'text-accent-red' : 'text-accent-purple'} size={32} />
+                      <Icon className={method.color === 'red' ? 'text-accent-jetbrains' : 'text-accent-pink'} size={32} />
                     </div>
                     <div className="space-y-1">
                       <h3 className="text-lg font-bold text-white">{method.label}</h3>

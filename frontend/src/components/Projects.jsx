@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Featured Projects</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-jetbrains to-accent-pink mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Key projects I've contributed to during my tenure at leading tech companies
             </p>
@@ -22,7 +22,7 @@ const Projects = () => {
             {projects.map((project) => (
               <Card
                 key={project.id}
-                className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-102 overflow-hidden group"
+                className="bg-gray-900/50 border-gray-800 hover:border-accent-jetbrains/50 hover:shadow-lg hover:shadow-accent-jetbrains/10 transition-all duration-300 hover:scale-102 overflow-hidden group"
               >
                 <div className="relative h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center overflow-hidden">
                   {project.image && !project.image.includes('placeholder') ? (
@@ -36,7 +36,7 @@ const Projects = () => {
                       }}
                     />
                   ) : null}
-                  <div className={`${project.image && !project.image.includes('placeholder') ? 'hidden' : 'flex'} fallback-content absolute inset-0 bg-gradient-to-br from-accent-red/10 to-accent-purple/10 flex-col items-center justify-center p-6`}>
+                  <div className={`${project.image && !project.image.includes('placeholder') ? 'hidden' : 'flex'} fallback-content absolute inset-0 bg-gradient-to-br from-accent-jetbrains/10 to-accent-pink/10 flex-col items-center justify-center p-6`}>
                     <h3 className="text-2xl font-bold text-white mb-2 text-center">{project.name}</h3>
                   </div>
                 </div>
@@ -55,21 +55,21 @@ const Projects = () => {
                     <div className="grid grid-cols-3 gap-2 py-3 border-t border-b border-gray-800">
                       {project.metrics.downloads && (
                         <div className="text-center">
-                          <Download className="text-accent-red mx-auto mb-1" size={16} />
+                          <Download className="text-accent-jetbrains mx-auto mb-1" size={16} />
                           <p className="text-white font-semibold text-sm">{project.metrics.downloads}</p>
                           <p className="text-gray-500 text-xs">Downloads</p>
                         </div>
                       )}
                       {project.metrics.rating && (
                         <div className="text-center">
-                          <Star className="text-accent-red mx-auto mb-1" size={16} />
+                          <Star className="text-accent-jetbrains mx-auto mb-1" size={16} />
                           <p className="text-white font-semibold text-sm">{project.metrics.rating}</p>
                           <p className="text-gray-500 text-xs">Rating</p>
                         </div>
                       )}
                       {project.metrics.crashFree && (
                         <div className="text-center">
-                          <TrendingUp className="text-accent-red mx-auto mb-1" size={16} />
+                          <TrendingUp className="text-accent-jetbrains mx-auto mb-1" size={16} />
                           <p className="text-white font-semibold text-sm">{project.metrics.crashFree}</p>
                           <p className="text-gray-500 text-xs">Crash-Free</p>
                         </div>
@@ -81,7 +81,7 @@ const Projects = () => {
                     {project.technologies.slice(0, 4).map((tech, idx) => (
                       <Badge
                         key={idx}
-                        className="bg-accent-red/10 text-accent-red border-accent-red/30 font-mono text-xs"
+                        className="bg-accent-jetbrains/10 text-accent-jetbrains border-accent-jetbrains/30 font-mono text-xs"
                       >
                         {tech}
                       </Badge>
@@ -91,7 +91,7 @@ const Projects = () => {
                   {project.links.playStore && (
                     <div className="pt-2">
                       <Button
-                        className="w-full bg-accent-red/10 hover:bg-accent-red/20 text-accent-red border border-accent-red/30 hover:border-accent-red transition-all"
+                        className="w-full bg-accent-jetbrains/10 hover:bg-accent-jetbrains/20 text-accent-jetbrains border border-accent-jetbrains/30 hover:border-accent-jetbrains transition-all"
                         onClick={() => window.open(project.links.playStore, '_blank')}
                       >
                         View on Play Store
