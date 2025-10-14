@@ -17,7 +17,7 @@ const About = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">About Me</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] mx-auto"></div>
           </div>
 
           <p className="text-gray-400 text-lg leading-relaxed max-w-4xl mx-auto text-left">

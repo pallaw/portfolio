@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Blog & Articles</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
               I write about Android development, Kotlin Multiplatform, and mobile architecture on Medium
             </p>
@@ -63,7 +63,7 @@ const Blog = () => {
           <div className="text-center pt-8">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
               onClick={() => window.open('https://medium.com/@pallawpathak', '_blank')}
             >
               View All Articles on Medium

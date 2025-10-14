@@ -11,7 +11,7 @@ const Experience = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Experience</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] mx-auto"></div>
           </div>
 
           <div className="relative max-w-5xl mx-auto">
@@ -25,7 +25,7 @@ const Experience = () => {
                   className="relative pl-20 md:pl-0"
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-8 md:left-1/2 top-6 w-4 h-4 bg-gradient-to-br from-[#1E123F] via-[#597DF0] to-[#3B63F5] rounded-full border-4 border-black shadow-lg shadow-accent-compose-royal/50 transform md:-translate-x-1/2 z-10"></div>
+                  <div className="absolute left-8 md:left-1/2 top-6 w-4 h-4 bg-gradient-to-br from-[#3B63F5] to-[#7C4AF0] rounded-full border-4 border-black shadow-lg shadow-accent-compose-royal/50 transform md:-translate-x-1/2 z-10"></div>
 
                   {/* Content card */}
                   <div className={`md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
@@ -33,7 +33,7 @@ const Experience = () => {
                       <div className="flex items-start justify-between">
                         <div className="space-y-1">
                           <h3 className="text-xl font-bold text-white">{exp.position}</h3>
-                          <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] font-semibold text-lg">{exp.company}</p>
+                          <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] font-semibold text-lg">{exp.company}</p>
                         </div>
                       </div>
                       
