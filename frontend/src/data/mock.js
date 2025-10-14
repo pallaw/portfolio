@@ -282,15 +282,15 @@ export const projects = [
 ];
 
 export const hireMe = {
-  title: "Let's Build Something Amazing Together",
-  description: "I'm currently open to exciting opportunities where I can leverage my expertise in Kotlin Multiplatform, Compose Multiplatform, and cross-platform development. Whether you're looking to build a new product from scratch or scale an existing one, I'd love to chat!",
-  availability: "Available for full-time opportunities",
-  cta: "Get in Touch",
+  title: "Let's Work Together",
+  description: "I help companies build scalable cross-platform mobile applications using Kotlin Multiplatform and Compose Multiplatform. With a decade of experience delivering high-impact products, I bring technical expertise and leadership to drive your mobile strategy forward.",
+  availability: "Open to new opportunities",
+  cta: "Let's Connect",
   highlights: [
-    { icon: "rocket", text: "10+ years of hands-on experience" },
+    { icon: "rocket", text: "10+ years building production apps" },
     { icon: "code-2", text: "Expert in KMP & Compose Multiplatform" },
-    { icon: "users", text: "Proven track record with 5M+ downloads" },
-    { icon: "lightbulb", text: "Passionate about clean architecture" }
+    { icon: "users", text: "Delivered apps with 5M+ downloads" },
+    { icon: "lightbulb", text: "Strong focus on clean architecture & performance" }
   ]
 };
 
