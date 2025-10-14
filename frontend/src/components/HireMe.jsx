@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, Github, Rocket, Code2, Users, Lightbulb, ArrowRight, MessageCircle, Calendar } from 'lucide-react';
+import { Mail, Calendar } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { hireMe, personalInfo } from '../data/mock';
 import CalendlyModal from './CalendlyModal';
-
-const iconMap = {
-  'rocket': Rocket,
-  'code-2': Code2,
-  'users': Users,
-  'lightbulb': Lightbulb
-};
+import ServicesCarousel from './ServicesCarousel';
 
 const HireMe = () => {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
