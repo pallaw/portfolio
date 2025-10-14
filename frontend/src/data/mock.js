@@ -65,14 +65,14 @@ export const experience = [
     company: "PhysicsWallah",
     position: "Senior Software Engineer",
     duration: "Aug 2023 - Dec 2024",
-    location: "India",
+    location: "Noida",
     responsibilities: [
       "Developed AcadFly from scratch with Kotlin Multiplatform (KMP) (85% shared code across Android & iOS); achieved 10K+ downloads, 4.0 rating",
       "Led Android development for CuriousJunior with 1M+ downloads and 4.6 rating",
       "Refactored legacy codebase using multi-module architecture, reducing build times by 30%",
       "Mentored teams in Kotlin Multiplatform development"
     ],
-    technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "MVVM", "Multi-module Architecture", "Coroutines"]
+    technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "MVVM", "MVI", "Multi-module Architecture", "Coroutines"]
   },
   {
     id: 3,
