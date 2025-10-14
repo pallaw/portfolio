@@ -62,14 +62,6 @@ const HireMe = () => {
               })}
             </div>
 
-            {/* Availability Status */}
-            <div className="text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 border border-green-500/30">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span className="text-green-400 font-medium">{hireMe.availability}</span>
-              </div>
-            </div>
-
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button
