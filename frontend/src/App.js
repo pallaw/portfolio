@@ -43,6 +43,7 @@ function App() {
         <Skills />
         <Projects />
         <Blog />
+        <HireMe />
         <Contact />
       </main>
       <Footer />
