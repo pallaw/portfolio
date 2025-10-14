@@ -16,7 +16,7 @@ const Experience = () => {
 
           <div className="relative max-w-5xl mx-auto">
             {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-compose-royal via-accent-compose-purple to-transparent transform md:-translate-x-1/2"></div>
+            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent-red via-accent-purple to-transparent transform md:-translate-x-1/2"></div>
 
             <div className="space-y-12">
               {experience.map((exp, index) => (
@@ -25,11 +25,11 @@ const Experience = () => {
                   className="relative pl-20 md:pl-0"
                 >
                   {/* Timeline dot */}
-                  <div className="absolute left-8 md:left-1/2 top-6 w-4 h-4 bg-gradient-to-br from-[#3B63F5] to-[#7C4AF0] rounded-full border-4 border-black shadow-lg shadow-accent-compose-royal/50 transform md:-translate-x-1/2 z-10"></div>
+                  <div className="absolute left-8 md:left-1/2 top-6 w-4 h-4 bg-gradient-to-br from-[#3B63F5] to-[#7C4AF0] rounded-full border-4 border-black shadow-lg shadow-accent-red/50 transform md:-translate-x-1/2 z-10"></div>
 
                   {/* Content card */}
                   <div className={`md:w-[calc(50%-2rem)] ${index % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12'}`}>
-                    <Card className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 p-6 space-y-4">
+                    <Card className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 p-6 space-y-4">
                       <div className="flex items-start justify-between">
                         <div className="space-y-1">
                           <h3 className="text-xl font-bold text-white">{exp.position}</h3>
@@ -39,11 +39,11 @@ const Experience = () => {
                       
                       <div className="flex flex-wrap gap-3 text-sm text-gray-400">
                         <span className="flex items-center gap-1">
-                          <Calendar size={16} className="text-accent-compose-royal" />
+                          <Calendar size={16} className="text-accent-red" />
                           {exp.duration}
                         </span>
                         <span className="flex items-center gap-1">
-                          <MapPin size={16} className="text-accent-compose-royal" />
+                          <MapPin size={16} className="text-accent-red" />
                           {exp.location}
                         </span>
                       </div>
@@ -51,7 +51,7 @@ const Experience = () => {
                       <ul className="space-y-2 text-gray-400 text-sm">
                         {exp.responsibilities.map((resp, idx) => (
                           <li key={idx} className="flex items-start gap-2">
-                            <span className="text-accent-compose-royal mt-1">•</span>
+                            <span className="text-accent-red mt-1">•</span>
                             <span>{resp}</span>
                           </li>
                         ))}
@@ -61,7 +61,7 @@ const Experience = () => {
                         {exp.technologies.map((tech, idx) => (
                           <Badge
                             key={idx}
-                            className="bg-accent-compose-royal/10 text-accent-compose-royal border-accent-compose-royal/30 hover:bg-accent-compose-royal/20 font-mono text-xs"
+                            className="bg-accent-red/10 text-accent-red border-accent-red/30 hover:bg-accent-red/20 font-mono text-xs"
                           >
                             {tech}
                           </Badge>

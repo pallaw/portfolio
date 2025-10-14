@@ -18,11 +18,11 @@ const Hero = () => {
           {/* Mobile: Image first */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in-delay">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-compose-royal/30 to-accent-compose-purple/30 blur-3xl rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-red/30 to-accent-purple/30 blur-3xl rounded-full"></div>
               <img
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
-                className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-accent-compose-royal/40 shadow-2xl shadow-accent-compose-royal/20"
+                className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-accent-red/40 shadow-2xl shadow-accent-red/20"
               />
             </div>
           </div>

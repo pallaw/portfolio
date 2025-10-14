@@ -47,7 +47,7 @@ const Header = () => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
-            className="text-xl font-bold text-white hover:text-accent-compose-royal transition-colors"
+            className="text-xl font-bold text-white hover:text-accent-red transition-colors"
           >
             Pallaw Pathak
           </a>
@@ -61,7 +61,7 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-gray-300 hover:text-accent-compose-royal transition-colors text-sm font-medium"
+                className="text-gray-300 hover:text-accent-red transition-colors text-sm font-medium"
               >
                 {item.name}
               </a>
@@ -90,7 +90,7 @@ const Header = () => {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block text-gray-300 hover:text-accent-compose-royal transition-colors text-sm font-medium py-2"
+                className="block text-gray-300 hover:text-accent-red transition-colors text-sm font-medium py-2"
               >
                 {item.name}
               </a>

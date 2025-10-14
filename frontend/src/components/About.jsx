@@ -30,11 +30,11 @@ const About = () => {
               return (
                 <Card
                   key={index}
-                  className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-105 p-6"
+                  className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-105 p-6"
                 >
                   <div className="flex flex-col items-center text-center space-y-3">
-                    <div className="p-3 bg-gradient-to-br from-accent-compose-royal/10 to-accent-compose-purple/10 rounded-lg">
-                      <Icon className="text-accent-compose-royal" size={32} />
+                    <div className="p-3 bg-gradient-to-br from-accent-red/10 to-accent-purple/10 rounded-lg">
+                      <Icon className="text-accent-red" size={32} />
                     </div>
                     <h3 className="text-2xl font-bold text-white">{highlight.title}</h3>
                     <p className="text-gray-400 text-sm">{highlight.description}</p>

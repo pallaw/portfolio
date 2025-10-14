@@ -22,10 +22,10 @@ const Footer = () => {
                   href={social.link}
                   target={social.label === 'Email' ? '_self' : '_blank'}
                   rel="noopener noreferrer"
-                  className="p-3 bg-[#1E123F]/50 rounded-lg border border-gray-800 hover:border-accent-compose-royal/50 hover:bg-accent-compose-royal/10 transition-all duration-300 hover:scale-110"
+                  className="p-3 bg-[#1E123F]/50 rounded-lg border border-gray-800 hover:border-accent-red/50 hover:bg-accent-red/10 transition-all duration-300 hover:scale-110"
                   aria-label={social.label}
                 >
-                  <Icon className="text-gray-400 hover:text-accent-compose-royal transition-colors" size={20} />
+                  <Icon className="text-gray-400 hover:text-accent-red transition-colors" size={20} />
                 </a>
               );
             })}

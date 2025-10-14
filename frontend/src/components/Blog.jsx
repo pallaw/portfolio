@@ -21,7 +21,7 @@ const Blog = () => {
             {articles.map((article) => (
               <Card
                 key={article.id}
-                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
+                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
                 onClick={() => window.open(article.link, '_blank')}
               >
                 <div className="relative h-48 overflow-hidden bg-gray-800">
@@ -37,7 +37,7 @@ const Blog = () => {
                 </div>
 
                 <div className="p-6 space-y-3">
-                  <h3 className="text-lg font-bold text-white leading-tight group-hover:text-accent-compose-royal transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-white leading-tight group-hover:text-accent-red transition-colors line-clamp-2">
                     {article.title}
                   </h3>
 
@@ -63,7 +63,7 @@ const Blog = () => {
           <div className="text-center pt-8">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-red/20 hover:shadow-accent-red/40 hover:scale-105 transition-all duration-300"
               onClick={() => window.open('https://medium.com/@pallawpathak', '_blank')}
             >
               View All Articles on Medium

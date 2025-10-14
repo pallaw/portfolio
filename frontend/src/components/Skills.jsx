@@ -24,14 +24,14 @@ const Skills = () => {
             {skillCategories.map((category, index) => (
               <Card
                 key={index}
-                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-compose-royal/50 transition-all duration-300 p-6 space-y-4"
+                className="bg-[#1E123F]/50 border-gray-800 hover:border-accent-red/50 transition-all duration-300 p-6 space-y-4"
               >
                 <h3 className="text-xl font-bold text-white">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.items.map((skill, idx) => (
                     <Badge
                       key={idx}
-                      className="bg-accent-compose-royal/10 text-accent-compose-royal border-accent-compose-royal/30 hover:bg-accent-compose-royal/20 font-mono text-sm py-1.5 px-3 hover:scale-105 transition-transform cursor-default"
+                      className="bg-accent-red/10 text-accent-red border-accent-red/30 hover:bg-accent-red/20 font-mono text-sm py-1.5 px-3 hover:scale-105 transition-transform cursor-default"
                     >
                       {skill}
                     </Badge>
