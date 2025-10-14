@@ -9,9 +9,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-[#0A0515] via-[#0F0820] to-[#0A0515]">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(59,99,245,0.2),transparent_50%)] pointer-events-none"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(124,74,240,0.15),transparent_50%)] pointer-events-none"></div>
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-black via-gray-950 to-black">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,13,41,0.15),transparent_50%)] pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(78,22,210,0.12),transparent_50%)] pointer-events-none"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
