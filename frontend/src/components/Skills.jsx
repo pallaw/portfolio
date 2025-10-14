@@ -33,7 +33,7 @@ const Skills = () => {
                       key={idx}
                       className="bg-accent-red/10 text-accent-red border-accent-red/30 hover:bg-accent-red/20 font-mono text-sm py-1.5 px-3 hover:scale-105 transition-transform cursor-default"
                     >
-                      {skill}
+                      {category.showYears && skill.name ? `${skill.name} (${skill.years}+ yrs)` : (typeof skill === 'string' ? skill : skill.name)}
                     </Badge>
                   ))}
                 </div>
