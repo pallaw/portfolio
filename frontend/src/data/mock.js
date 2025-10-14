@@ -263,7 +263,7 @@ export const projects = [
     company: "Shipsy"
   },
   {
-    id: 6,
+    id: 7,
     name: "OnDemand by Shipsy",
     description: "On-demand delivery management platform. Implemented real-time order tracking and optimized routing algorithms.",
     image: "https://play-lh.googleusercontent.com/placeholder-ondemand",
