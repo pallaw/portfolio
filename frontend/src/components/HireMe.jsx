@@ -35,6 +35,14 @@ const HireMe = () => {
             <p className="text-gray-300 text-lg text-center max-w-3xl mx-auto leading-relaxed">
               {hireMe.description}
             </p>
+            
+            {/* Availability Status */}
+            <div className="text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-red/10 border border-accent-red/30">
+                <span className="w-2 h-2 rounded-full bg-accent-red"></span>
+                <span className="text-accent-red font-medium">{hireMe.availability}</span>
+              </div>
+            </div>
 
             {/* Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-6">
