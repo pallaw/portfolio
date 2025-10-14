@@ -88,15 +88,26 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {project.links.playStore && (
-                    <div className="pt-2">
-                      <Button
-                        className="w-full bg-accent-red/10 hover:bg-accent-red/20 text-accent-red border border-accent-red/30 hover:border-accent-red transition-all"
-                        onClick={() => window.open(project.links.playStore, '_blank')}
-                      >
-                        View on Play Store
-                        <ExternalLink className="ml-2" size={16} />
-                      </Button>
+                  {(project.links.playStore || project.links.appStore) && (
+                    <div className="pt-2 space-y-2">
+                      {project.links.playStore && (
+                        <Button
+                          className="w-full bg-accent-red/10 hover:bg-accent-red/20 text-accent-red border border-accent-red/30 hover:border-accent-red transition-all"
+                          onClick={() => window.open(project.links.playStore, '_blank')}
+                        >
+                          View on Play Store
+                          <ExternalLink className="ml-2" size={16} />
+                        </Button>
+                      )}
+                      {project.links.appStore && (
+                        <Button
+                          className="w-full bg-accent-purple/10 hover:bg-accent-purple/20 text-accent-purple border border-accent-purple/30 hover:border-accent-purple transition-all"
+                          onClick={() => window.open(project.links.appStore, '_blank')}
+                        >
+                          View on App Store
+                          <ExternalLink className="ml-2" size={16} />
+                        </Button>
+                      )}
                     </div>
                   )}
                 </div>
