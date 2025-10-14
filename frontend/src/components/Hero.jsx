@@ -18,11 +18,11 @@ const Hero = () => {
           {/* Mobile: Image first */}
           <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in-delay">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-jetbrains/30 to-accent-pink/30 blur-3xl rounded-full"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-compose-royal/30 to-accent-compose-purple/30 blur-3xl rounded-full"></div>
               <img
                 src={personalInfo.profileImage}
                 alt={personalInfo.name}
-                className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-accent-jetbrains/40 shadow-2xl shadow-accent-jetbrains/20"
+                className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-accent-compose-royal/40 shadow-2xl shadow-accent-compose-royal/20"
               />
             </div>
           </div>
@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Mobile: Text second */}
           <div className="space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="space-y-2">
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-accent-jetbrains to-accent-pink text-lg font-medium tracking-wide">Hello, I'm</h2>
+              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-accent-compose-royal to-accent-compose-purple text-lg font-medium tracking-wide">Hello, I'm</h2>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 {personalInfo.name}
               </h1>
@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-accent-jetbrains to-accent-pink hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-jetbrains/20 hover:shadow-accent-jetbrains/40 hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-accent-compose-royal to-accent-compose-purple hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
                 onClick={scrollToContact}
               >
                 Get In Touch
@@ -58,7 +58,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-gray-700 text-white hover:bg-gray-900 hover:border-accent-jetbrains font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
+                className="border-2 border-gray-700 text-white hover:bg-gray-900 hover:border-accent-compose-royal font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
                 onClick={() => window.open('https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/6a2xfnkv_Pallaw_Pathak_Senior_Android_Resume.pdf', '_blank')}
               >
                 <Download className="mr-2" size={20} />

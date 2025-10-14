@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Blog & Articles</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-accent-jetbrains to-accent-pink mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-compose-royal to-accent-compose-purple mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
               I write about Android development, Kotlin Multiplatform, and mobile architecture on Medium
             </p>
@@ -21,7 +21,7 @@ const Blog = () => {
             {articles.map((article) => (
               <Card
                 key={article.id}
-                className="bg-gray-900/50 border-gray-800 hover:border-accent-jetbrains/50 hover:shadow-lg hover:shadow-accent-jetbrains/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
+                className="bg-gray-900/50 border-gray-800 hover:border-accent-compose-royal/50 hover:shadow-lg hover:shadow-accent-compose-royal/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
                 onClick={() => window.open(article.link, '_blank')}
               >
                 <div className="relative h-48 overflow-hidden bg-gray-800">
@@ -37,7 +37,7 @@ const Blog = () => {
                 </div>
 
                 <div className="p-6 space-y-3">
-                  <h3 className="text-lg font-bold text-white leading-tight group-hover:text-accent-jetbrains transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-white leading-tight group-hover:text-accent-compose-royal transition-colors line-clamp-2">
                     {article.title}
                   </h3>
 
@@ -63,7 +63,7 @@ const Blog = () => {
           <div className="text-center pt-8">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-accent-jetbrains to-accent-pink hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-jetbrains/20 hover:shadow-accent-jetbrains/40 hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-accent-compose-royal to-accent-compose-purple hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
               onClick={() => window.open('https://medium.com/@pallawpathak', '_blank')}
             >
               View All Articles on Medium
