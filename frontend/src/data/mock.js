@@ -131,10 +131,10 @@ export const experience = [
 
 export const skills = {
   languages: [
-    { name: "Kotlin", years: 7 },
-    { name: "Java", years: 10 },
-    { name: "Kotlin Multiplatform", years: 2 },
-    { name: "Compose Multiplatform", years: 2 }
+    { name: "Kotlin", years: 7, rating: 4, maxRating: 5 },
+    { name: "Java", years: 10, rating: 4, maxRating: 5 },
+    { name: "Kotlin Multiplatform", years: 2, rating: 3, maxRating: 5 },
+    { name: "Compose Multiplatform", years: 2, rating: 3, maxRating: 5 }
   ],
   frameworks: [
     "Kotlin Multiplatform (KMP)",
