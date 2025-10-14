@@ -50,7 +50,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-accent-red to-accent-purple hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-red/20 hover:shadow-accent-red/40 hover:scale-105 transition-all duration-300"
-                onClick={scrollToContact}
+                onClick={scrollToCollaborate}
               >
                 Get In Touch
                 <ArrowRight className="ml-2" size={20} />
