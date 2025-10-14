@@ -45,7 +45,7 @@ const HireMeFab = () => {
         className="group h-14 px-6 bg-gradient-to-r from-accent-red to-accent-red/80 hover:from-accent-red/90 hover:to-accent-red text-white border-0 shadow-2xl shadow-accent-red/30 hover:shadow-accent-red/50 transition-all duration-300 hover:scale-105 rounded-full font-semibold"
       >
         <Briefcase className="mr-2 group-hover:rotate-12 transition-transform" size={20} />
-        Hire Me
+        Collaborate
       </Button>
     </div>
   );
