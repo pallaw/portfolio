@@ -15,7 +15,20 @@ const Hero = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 animate-fade-in">
+          {/* Mobile: Image first */}
+          <div className="flex justify-center lg:justify-end order-1 lg:order-2 animate-fade-in-delay">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-red/30 to-accent-purple/30 blur-3xl rounded-full"></div>
+              <img
+                src={personalInfo.profileImage}
+                alt={personalInfo.name}
+                className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-accent-red/40 shadow-2xl shadow-accent-red/20"
+              />
+            </div>
+          </div>
+
+          {/* Mobile: Text second */}
+          <div className="space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="space-y-2">
               <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-accent-red to-accent-purple text-lg font-medium tracking-wide">Hello, I'm</h2>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -51,17 +64,6 @@ const Hero = () => {
                 <Download className="mr-2" size={20} />
                 Download Resume
               </Button>
-            </div>
-          </div>
-
-          <div className="flex justify-center lg:justify-end animate-fade-in-delay">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-red/30 to-accent-purple/30 blur-3xl rounded-full"></div>
-              <img
-                src={personalInfo.profileImage}
-                alt={personalInfo.name}
-                className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-accent-red/40 shadow-2xl shadow-accent-red/20"
-              />
             </div>
           </div>
         </div>

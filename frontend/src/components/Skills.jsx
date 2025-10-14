@@ -6,9 +6,9 @@ import { skills } from '../data/mock';
 const Skills = () => {
   const skillCategories = [
     { title: 'Languages', items: skills.languages, color: 'red' },
-    { title: 'Frameworks & Libraries', items: [...skills.frameworks, ...skills.libraries], color: 'purple' },
+    { title: 'Frameworks & Libraries', items: [...skills.frameworks, ...skills.libraries], color: 'red' },
     { title: 'Architecture & Patterns', items: skills.architecture, color: 'red' },
-    { title: 'Tools & Practices', items: [...skills.tools, ...skills.practices], color: 'purple' }
+    { title: 'Tools & Practices', items: [...skills.tools, ...skills.practices], color: 'red' }
   ];
 
   return (
@@ -31,11 +31,7 @@ const Skills = () => {
                   {category.items.map((skill, idx) => (
                     <Badge
                       key={idx}
-                      className={`${
-                        category.color === 'red'
-                          ? 'bg-accent-red/10 text-accent-red border-accent-red/30 hover:bg-accent-red/20'
-                          : 'bg-accent-purple/10 text-accent-purple border-accent-purple/30 hover:bg-accent-purple/20'
-                      } font-mono text-sm py-1.5 px-3 hover:scale-105 transition-transform cursor-default`}
+                      className="bg-accent-red/10 text-accent-red border-accent-red/30 hover:bg-accent-red/20 font-mono text-sm py-1.5 px-3 hover:scale-105 transition-transform cursor-default"
                     >
                       {skill}
                     </Badge>

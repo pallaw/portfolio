@@ -14,7 +14,7 @@ const Projects = () => {
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Featured Projects</h2>
             <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              A selection of professional and B2B projects I've built and contributed to over the years
+              Key projects I've contributed to during my tenure at leading tech companies
             </p>
           </div>
 
@@ -38,13 +38,15 @@ const Projects = () => {
                   ) : null}
                   <div className={`${project.image && !project.image.includes('placeholder') ? 'hidden' : 'flex'} fallback-content absolute inset-0 bg-gradient-to-br from-accent-red/10 to-accent-purple/10 flex-col items-center justify-center p-6`}>
                     <h3 className="text-2xl font-bold text-white mb-2 text-center">{project.name}</h3>
-                    <Badge className="bg-accent-red/20 text-accent-red border-accent-red/50">
-                      {project.type === 'professional' ? 'Professional' : 'B2B'}
-                    </Badge>
                   </div>
                 </div>
 
                 <div className="p-6 space-y-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-1">{project.name}</h3>
+                    <p className="text-sm text-gray-500">@{project.company}</p>
+                  </div>
+
                   <p className="text-gray-400 text-sm leading-relaxed min-h-[4rem]">
                     {project.description}
                   </p>
@@ -87,13 +89,15 @@ const Projects = () => {
                   </div>
 
                   {project.links.playStore && (
-                    <Button
-                      className="w-full bg-accent-red/10 hover:bg-accent-red/20 text-accent-red border border-accent-red/30 hover:border-accent-red transition-all"
-                      onClick={() => window.open(project.links.playStore, '_blank')}
-                    >
-                      View on Play Store
-                      <ExternalLink className="ml-2" size={16} />
-                    </Button>
+                    <div className="pt-2">
+                      <Button
+                        className="w-full bg-accent-red/10 hover:bg-accent-red/20 text-accent-red border border-accent-red/30 hover:border-accent-red transition-all"
+                        onClick={() => window.open(project.links.playStore, '_blank')}
+                      >
+                        View on Play Store
+                        <ExternalLink className="ml-2" size={16} />
+                      </Button>
+                    </div>
                   )}
                 </div>
               </Card>

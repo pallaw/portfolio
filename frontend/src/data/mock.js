@@ -3,7 +3,7 @@
 export const personalInfo = {
   name: "Pallaw Pathak",
   title: "Senior Android Engineer | Kotlin & Compose Multiplatform Expert",
-  subtitle: "10+ Years | Architecture & Mobile DevOps Focus",
+  subtitle: "10+ Years Experience | KMP & Cross-Platform Architecture Specialist",
   bio: "Senior Android Engineer with over 10 years of experience specializing in Kotlin Multiplatform (KMP) and Compose Multiplatform. Proven expertise in designing clean, scalable architecture using patterns like MVVM and MVI, and optimizing app performance across platforms.",
   profileImage: "https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/zv3h7a9v_profile-pic%20%283%29.png",
   email: "pallaw.pathak@gmail.com",
@@ -183,7 +183,7 @@ export const projects = [
     links: {
       playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.unigo&hl=en_IN"
     },
-    type: "professional"
+    company: "PhysicsWallah"
   },
   {
     id: 2,
@@ -199,7 +199,7 @@ export const projects = [
     links: {
       playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.physicswala&hl=en_IN"
     },
-    type: "professional"
+    company: "PhysicsWallah"
   },
   {
     id: 3,
@@ -215,7 +215,7 @@ export const projects = [
     links: {
       playStore: "https://play.google.com/store/apps/details?id=in.shipsy.riderapp.hubOps&hl=en_IN"
     },
-    type: "b2b"
+    company: "Shipsy"
   },
   {
     id: 4,
@@ -230,7 +230,7 @@ export const projects = [
     links: {
       playStore: "https://play.google.com/store/apps/details?id=io.shipsy.fieldops&hl=en_IN"
     },
-    type: "b2b"
+    company: "Shipsy"
   },
   {
     id: 5,
@@ -245,7 +245,7 @@ export const projects = [
     links: {
       playStore: "https://play.google.com/store/apps/details?id=in.shipsy.riderapp.tms&hl=en_IN"
     },
-    type: "b2b"
+    company: "Shipsy"
   },
   {
     id: 6,
@@ -260,7 +260,7 @@ export const projects = [
     links: {
       playStore: "https://play.google.com/store/apps/details?id=in.shipsy.riderapp.ondemand.generic&hl=en_IN"
     },
-    type: "b2b"
+    company: "Shipsy"
   }
 ];
 
