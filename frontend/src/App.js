@@ -9,6 +9,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
 import HireMe from './components/HireMe';
+import HireMeFab from './components/HireMeFab';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
