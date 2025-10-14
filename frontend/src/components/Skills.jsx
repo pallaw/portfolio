@@ -44,11 +44,11 @@ const Skills = () => {
                             {lang.name}
                           </h4>
                           <div className="flex items-center gap-2">
-                            <div className="text-blue-400 font-semibold text-lg">{lang.rating}/{lang.maxRating}</div>
-                            <div className="text-gray-400 text-sm">rating</div>
+                            <div className="text-blue-400 font-semibold text-lg">{lang.years}+</div>
+                            <div className="text-gray-400 text-sm">years experience</div>
                           </div>
                         </div>
-                        <div className="text-5xl font-bold text-blue-500/10 group-hover:text-blue-400/20 transition-colors">
+                        <div className="text-6xl font-bold text-blue-500/10 group-hover:text-blue-400/20 transition-colors">
                           {lang.rating}
                         </div>
                       </div>
