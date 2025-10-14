@@ -289,11 +289,43 @@ export const hireMe = {
   description: "I help companies build scalable cross-platform mobile applications using Kotlin Multiplatform and Compose Multiplatform. With a decade of experience delivering high-impact products, I bring technical expertise and leadership to drive your mobile strategy forward.",
   availability: "Open to new opportunities",
   cta: "Let's Connect",
-  highlights: [
-    { icon: "rocket", text: "10+ years building production apps" },
-    { icon: "code-2", text: "Expert in KMP & Compose Multiplatform" },
-    { icon: "users", text: "Delivered apps with 5M+ downloads" },
-    { icon: "lightbulb", text: "Strong focus on clean architecture & performance" }
+  services: [
+    {
+      icon: "code",
+      title: "Cross-Platform Development",
+      description: "Build iOS and Android apps with 85% shared code using Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP)",
+      tags: ["KMP", "CMP", "iOS", "Android"]
+    },
+    {
+      icon: "layout",
+      title: "Architecture & Design",
+      description: "Design scalable, maintainable architectures using MVVM, MVI, and Clean Architecture patterns",
+      tags: ["MVVM", "MVI", "Clean Architecture", "Multi-module"]
+    },
+    {
+      icon: "zap",
+      title: "Performance Optimization",
+      description: "Optimize app performance, reduce crash rates, and improve user experience metrics",
+      tags: ["Performance", "Optimization", "Crash Analysis"]
+    },
+    {
+      icon: "users-round",
+      title: "Team Leadership & Mentorship",
+      description: "Lead development teams, mentor junior developers, and establish best practices",
+      tags: ["Leadership", "Mentorship", "Code Review"]
+    },
+    {
+      icon: "git-branch",
+      title: "CI/CD & DevOps",
+      description: "Set up automated pipelines, streamline release processes, and improve developer productivity",
+      tags: ["GitHub Actions", "CI/CD", "Automation"]
+    },
+    {
+      icon: "smartphone",
+      title: "Legacy App Modernization",
+      description: "Refactor and modernize legacy codebases with modern architecture and latest technologies",
+      tags: ["Refactoring", "Migration", "Modernization"]
+    }
   ]
 };
 
