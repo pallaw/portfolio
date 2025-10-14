@@ -1,8 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 import { ChevronLeft, ChevronRight, Code, Layout, Zap, UsersRound, GitBranch, Smartphone } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
 
 const iconMap = {
   'code': Code,
@@ -14,57 +22,7 @@ const iconMap = {
 };
 
 const ServicesCarousel = ({ services }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [offset, setOffset] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  // Auto-play carousel
-  useEffect(() => {
-    if (!isAutoPlaying || isAnimating) return;
-    
-    const interval = setInterval(() => {
-      handleNext();
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying, isAnimating, currentIndex]);
-
-  const handleNext = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentIndex((prev) => (prev + 1) % services.length);
-    setTimeout(() => setIsAnimating(false), 800);
-  };
-
-  const handlePrev = () => {
-    if (isAnimating) return;
-    setIsAutoPlaying(false);
-    setIsAnimating(true);
-    setCurrentIndex((prev) => (prev - 1 + services.length) % services.length);
-    setTimeout(() => setIsAnimating(false), 800);
-  };
-
-  const goToNext = () => {
-    setIsAutoPlaying(false);
-    handleNext();
-  };
-
-  const goToPrev = () => {
-    handlePrev();
-  };
-
-  // Get all services in correct order for continuous display
-  const getDisplayServices = () => {
-    const display = [];
-    for (let i = -1; i <= 3; i++) {
-      const index = (currentIndex + i + services.length) % services.length;
-      display.push({ ...services[index], offset: i });
-    }
-    return display;
-  };
-
-  const displayServices = getDisplayServices();
+  const swiperRef = useRef(null);
 
   return (
     <div className="relative px-4 md:px-12">
