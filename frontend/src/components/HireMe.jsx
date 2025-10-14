@@ -1,8 +1,9 @@
-import React from 'react';
-import { Mail, Linkedin, Github, Rocket, Code2, Users, Lightbulb, ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Linkedin, Github, Rocket, Code2, Users, Lightbulb, ArrowRight, MessageCircle, Calendar } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { hireMe, personalInfo } from '../data/mock';
+import CalendlyModal from './CalendlyModal';
 
 const iconMap = {
   'rocket': Rocket,
