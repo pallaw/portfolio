@@ -89,34 +89,47 @@ const ServicesCarousel = ({ services }) => {
       </Button>
 
       {/* Carousel Items */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      <div className="flex items-center justify-center gap-4 md:gap-6">
         {visibleServices.map((service, idx) => {
           const IconComponent = iconMap[service.icon];
           const actualIndex = (currentIndex + idx) % services.length;
+          const isCenter = idx === 1;
           
           return (
             <Card
               key={actualIndex}
-              className="bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-800 hover:border-accent-red/50 p-6 relative overflow-hidden group transition-all duration-300 hover:scale-105"
+              className={`bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-gray-800 hover:border-accent-red/50 p-6 relative overflow-hidden group transition-all duration-500 ease-out ${
+                isCenter 
+                  ? 'scale-110 lg:scale-115 border-accent-red/30 shadow-xl shadow-accent-red/20 z-10' 
+                  : 'scale-95 lg:scale-100 opacity-80 hover:opacity-100'
+              } ${idx === 0 ? 'hidden lg:block' : ''} ${idx === 2 ? 'hidden lg:block' : ''} flex-1 max-w-sm`}
             >
               {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-accent-red/5 rounded-full blur-2xl group-hover:bg-accent-red/10 transition-all"></div>
+              <div className={`absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl transition-all ${
+                isCenter ? 'bg-accent-red/10' : 'bg-accent-red/5 group-hover:bg-accent-red/10'
+              }`}></div>
 
               <div className="relative z-10 flex flex-col h-full min-h-[240px]">
                 {/* Icon and Title */}
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="flex-shrink-0 p-3 rounded-lg bg-gradient-to-br from-accent-red/20 to-accent-purple/20 border border-accent-red/30 group-hover:scale-110 transition-transform">
-                    <IconComponent className="text-accent-red" size={24} />
+                  <div className={`flex-shrink-0 p-3 rounded-lg bg-gradient-to-br from-accent-red/20 to-accent-purple/20 border border-accent-red/30 transition-transform ${
+                    isCenter ? 'scale-110' : 'group-hover:scale-110'
+                  }`}>
+                    <IconComponent className="text-accent-red" size={isCenter ? 28 : 24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold text-white mb-1 leading-tight">
+                    <h3 className={`font-bold text-white mb-1 leading-tight ${
+                      isCenter ? 'text-xl' : 'text-lg'
+                    }`}>
                       {service.title}
                     </h3>
                   </div>
                 </div>
 
                 {/* Description */}
-                <p className="text-gray-400 text-sm leading-relaxed mb-4 flex-1">
+                <p className={`text-gray-400 leading-relaxed mb-4 flex-1 ${
+                  isCenter ? 'text-base' : 'text-sm'
+                }`}>
                   {service.description}
                 </p>
 
@@ -125,7 +138,9 @@ const ServicesCarousel = ({ services }) => {
                   {service.tags.map((tag, tagIdx) => (
                     <Badge
                       key={tagIdx}
-                      className="bg-accent-red/10 text-accent-red border-accent-red/30 font-mono text-xs px-2 py-0.5"
+                      className={`bg-accent-red/10 text-accent-red border-accent-red/30 font-mono px-2 py-0.5 ${
+                        isCenter ? 'text-xs' : 'text-xs'
+                      }`}
                     >
                       {tag}
                     </Badge>
