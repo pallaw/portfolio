@@ -154,6 +154,7 @@ const HireMe = () => {
           </div>
         </Card>
       </div>
+      </section>
 
       {/* Calendly Modal */}
       <CalendlyModal 
@@ -161,7 +162,7 @@ const HireMe = () => {
         onClose={() => setIsCalendlyOpen(false)}
         calendlyUrl={personalInfo.calendly}
       />
-    </section>
+    </>
   );
 };
 
