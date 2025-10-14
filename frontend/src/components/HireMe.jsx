@@ -94,10 +94,10 @@ const HireMe = () => {
             {/* Contact Info */}
             <div className="text-center pt-6 border-t border-gray-800">
               <p className="text-gray-400 text-sm">
-                Prefer a different way to connect? Reach me at{' '}
+                Or reach out directly at{' '}
                 <a 
                   href={`mailto:${personalInfo.email}`} 
-                  className="text-accent-red hover:text-accent-red/80 transition-colors underline"
+                  className="text-accent-red hover:text-accent-red/80 transition-colors font-medium"
                 >
                   {personalInfo.email}
                 </a>
