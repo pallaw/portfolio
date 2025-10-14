@@ -64,20 +64,35 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {contactMethods.map((method, index) => {
               const Icon = method.icon;
+              const getColorClasses = (color) => {
+                switch(color) {
+                  case 'red': return { bg: 'bg-accent-red/10', text: 'text-accent-red' };
+                  case 'purple': return { bg: 'bg-accent-purple/10', text: 'text-accent-purple' };
+                  case 'blue': return { bg: 'bg-blue-500/10', text: 'text-blue-500' };
+                  case 'green': return { bg: 'bg-green-500/10', text: 'text-green-500' };
+                  default: return { bg: 'bg-gray-800', text: 'text-white' };
+                }
+              };
+              const colors = getColorClasses(method.color);
+              
               return (
                 <Card
                   key={index}
                   className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
-                  onClick={() => window.open(method.link, method.label === 'Email' || method.label === 'Phone' ? '_self' : '_blank')}
+                  onClick={() => {
+                    if (method.action) {
+                      method.action();
+                    } else if (method.link) {
+                      window.open(method.link, method.label === 'Email' || method.label === 'Phone' ? '_self' : '_blank');
+                    }
+                  }}
                 >
                   <div className="flex flex-col items-center text-center space-y-3">
-                    <div className={`p-4 rounded-lg ${
-                      method.color === 'red' ? 'bg-accent-red/10' : 'bg-accent-purple/10'
-                    }`}>
-                      <Icon className={method.color === 'red' ? 'text-accent-red' : 'text-accent-purple'} size={32} />
+                    <div className={`p-4 rounded-lg ${colors.bg}`}>
+                      <Icon className={colors.text} size={32} />
                     </div>
                     <div className="space-y-1">
                       <h3 className="text-lg font-bold text-white">{method.label}</h3>
