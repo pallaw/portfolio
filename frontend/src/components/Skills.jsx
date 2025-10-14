@@ -49,7 +49,7 @@ const Skills = () => {
                           </div>
                         </div>
                         <div className="text-5xl font-bold text-blue-500/10 group-hover:text-blue-400/20 transition-colors">
-                          {lang.years}
+                          {lang.rating}
                         </div>
                       </div>
                       
