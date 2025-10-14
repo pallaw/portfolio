@@ -57,7 +57,7 @@ const Skills = () => {
                       <div className="mt-4 h-1.5 bg-gray-700 rounded-full overflow-hidden">
                         <div 
                           className="h-full bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 rounded-full transition-all duration-1000"
-                          style={{ width: `${Math.min((lang.years / 10) * 100, 100)}%` }}
+                          style={{ width: `${(lang.rating / lang.maxRating) * 100}%` }}
                         ></div>
                       </div>
                     </div>
