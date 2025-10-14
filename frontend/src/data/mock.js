@@ -79,7 +79,7 @@ export const experience = [
     company: "Shipsy",
     position: "Senior Software Engineer",
     duration: "Aug 2020 - June 2023",
-    location: "India",
+    location: "Gurugram",
     responsibilities: [
       "Refactored 6-year-old legacy Rider App using MVVM and Clean Architecture",
       "Reduced crash rate by 20% and improved performance by 30%",
