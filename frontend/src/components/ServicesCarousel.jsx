@@ -16,31 +16,43 @@ const iconMap = {
 const ServicesCarousel = ({ services }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Auto-play carousel
   useEffect(() => {
     if (!isAutoPlaying) return;
     
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => {
-        const maxIndex = services.length - 1;
-        return prev >= maxIndex ? 0 : prev + 1;
-      });
+      handleNext();
     }, 4000);
 
     return () => clearInterval(interval);
-  }, [isAutoPlaying, services.length]);
+  }, [isAutoPlaying, services.length, currentIndex]);
+
+  const handleNext = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    const maxIndex = services.length - 1;
+    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    setTimeout(() => setIsTransitioning(false), 500);
+  };
+
+  const handlePrev = () => {
+    if (isTransitioning) return;
+    setIsAutoPlaying(false);
+    setIsTransitioning(true);
+    const maxIndex = services.length - 1;
+    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+    setTimeout(() => setIsTransitioning(false), 500);
+  };
 
   const goToNext = () => {
     setIsAutoPlaying(false);
-    const maxIndex = services.length - 1;
-    setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
+    handleNext();
   };
 
   const goToPrev = () => {
-    setIsAutoPlaying(false);
-    const maxIndex = services.length - 1;
-    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+    handlePrev();
   };
 
   // Get visible services (show 3 on desktop, 2 on tablet, 1 on mobile)
@@ -48,7 +60,7 @@ const ServicesCarousel = ({ services }) => {
     const visible = [];
     for (let i = 0; i < 3; i++) {
       const index = (currentIndex + i) % services.length;
-      visible.push(services[index]);
+      visible.push({ ...services[index], position: i });
     }
     return visible;
   };
