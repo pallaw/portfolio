@@ -52,26 +52,23 @@ const Projects = () => {
                   </p>
 
                   {project.metrics && (
-                    <div className="grid grid-cols-3 gap-2 py-3 border-t border-b border-gray-800">
+                    <div className="flex justify-between items-center py-3 border-t border-b border-gray-800 px-4">
                       {project.metrics.downloads && (
-                        <div className="text-center">
-                          <Download className="text-accent-red mx-auto mb-1" size={16} />
-                          <p className="text-white font-semibold text-sm">{project.metrics.downloads}</p>
-                          <p className="text-gray-500 text-xs">Downloads</p>
+                        <div className="flex items-center gap-2">
+                          <Download className="text-accent-red" size={16} />
+                          <div>
+                            <p className="text-white font-semibold text-sm">{project.metrics.downloads}</p>
+                            <p className="text-gray-500 text-xs">Downloads</p>
+                          </div>
                         </div>
                       )}
                       {project.metrics.rating && (
-                        <div className="text-center">
-                          <Star className="text-accent-red mx-auto mb-1" size={16} />
-                          <p className="text-white font-semibold text-sm">{project.metrics.rating}</p>
-                          <p className="text-gray-500 text-xs">Rating</p>
-                        </div>
-                      )}
-                      {project.metrics.crashFree && (
-                        <div className="text-center">
-                          <TrendingUp className="text-accent-red mx-auto mb-1" size={16} />
-                          <p className="text-white font-semibold text-sm">{project.metrics.crashFree}</p>
-                          <p className="text-gray-500 text-xs">Crash-Free</p>
+                        <div className="flex items-center gap-2">
+                          <div className="text-right">
+                            <p className="text-white font-semibold text-sm">{project.metrics.rating}</p>
+                            <p className="text-gray-500 text-xs">Rating</p>
+                          </div>
+                          <Star className="text-accent-red" size={16} />
                         </div>
                       )}
                     </div>
