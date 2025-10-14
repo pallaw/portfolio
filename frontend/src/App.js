@@ -48,6 +48,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <HireMeFab />
     </div>
   );
 }
