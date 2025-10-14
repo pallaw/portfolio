@@ -52,13 +52,13 @@ export const experience = [
     company: "PayPay India",
     position: "Senior Software Engineer",
     duration: "Jan 2025 - May 2025",
-    location: "India",
+    location: "Gurugram",
     responsibilities: [
       "Refactored CI/CD pipelines for the PAI SDK using GitHub Actions, streamlining build and release processes",
       "Implemented Gift Voucher Grant feature to enhance in-app engagement and user satisfaction",
       "Winner of PayPay India Hackathon for creating SmaToshi, a goal-based micro-investment feature"
     ],
-    technologies: ["Kotlin", "GitHub Actions", "CI/CD", "Android SDK"]
+    technologies: ["Kotlin", "GitHub Actions", "CI/CD", "Clean Architecture", "Multi-Module Architecture"]
   },
   {
     id: 2,
