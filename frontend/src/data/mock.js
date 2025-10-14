@@ -210,12 +210,12 @@ export const projects = [
     image: "https://play-lh.googleusercontent.com/x5_bJXO_-4zH95U6-GSmZPHWX7iFe1JPmfGe26kV2fVrZS5Ebi7L_VFIOopAQ3XBDg=w240-h480-rw",
     technologies: ["Kotlin", "Jetpack Compose", "Multi-module", "Coroutines", "Clean Architecture"],
     metrics: {
-      downloads: "1M+",
-      rating: "4.6",
-      crashFree: "96%"
+      downloads: "10M+",
+      rating: "4.6"
     },
     links: {
-      playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.physicswala&hl=en_IN"
+      playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.physicswala&hl=en_IN",
+      appStore: "https://apps.apple.com/in/app/physics-wallah/id1577604498"
     },
     company: "PhysicsWallah"
   },
