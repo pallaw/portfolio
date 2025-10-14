@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Mobile: Text second */}
           <div className="space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="space-y-2">
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-accent-compose-royal to-accent-compose-purple text-lg font-medium tracking-wide">Hello, I'm</h2>
+              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] text-lg font-medium tracking-wide">Hello, I'm</h2>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 {personalInfo.name}
               </h1>
@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-accent-compose-royal to-accent-compose-purple hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-compose-royal/20 hover:shadow-accent-compose-royal/40 hover:scale-105 transition-all duration-300"
                 onClick={scrollToContact}
               >
                 Get In Touch
