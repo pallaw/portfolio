@@ -30,7 +30,7 @@ const Hero = () => {
           {/* Mobile: Text second */}
           <div className="space-y-6 animate-fade-in order-2 lg:order-1">
             <div className="space-y-2">
-              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E123F] via-[#597DF0] to-[#3B63F5] text-lg font-medium tracking-wide">Hello, I'm</h2>
+              <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-[#597DF0] to-[#7C4AF0] text-lg font-medium tracking-wide">Hello, I'm</h2>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
                 {personalInfo.name}
               </h1>
