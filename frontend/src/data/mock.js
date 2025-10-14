@@ -72,7 +72,7 @@ export const experience = [
       "Refactored legacy codebase using multi-module architecture, reducing build times by 30%",
       "Mentored teams in Kotlin Multiplatform development"
     ],
-    technologies: ["KMP", "Compose Multiplatform", "MVVM", "Multi-module Architecture", "Coroutines"]
+    technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "MVVM", "Multi-module Architecture", "Coroutines"]
   },
   {
     id: 3,
