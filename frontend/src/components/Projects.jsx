@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Featured Projects</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-[#3B63F5] to-[#7C4AF0] mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Key projects I've contributed to during my tenure at leading tech companies
             </p>
