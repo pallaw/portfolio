@@ -40,10 +40,10 @@ function App() {
       <div className=\"App\" style={{ backgroundColor: '#0D0D0D', minHeight: '100vh' }}>
         <Header />
         <main>
-          <Hero />
-          <About />
+          <HeroMD3 />
+          <AboutMD3 />
           <Experience />
-          <Skills />
+          <SkillsMD3 />
           <Projects />
           <Blog />
           <Contact />
