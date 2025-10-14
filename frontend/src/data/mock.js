@@ -195,11 +195,11 @@ export const projects = [
     technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Ktor", "Koin", "MVVM"],
     metrics: {
       downloads: "10K+",
-      rating: "4.0",
-      crashFree: "99.75%"
+      rating: "4.0"
     },
     links: {
-      playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.unigo&hl=en_IN"
+      playStore: "https://play.google.com/store/apps/details?id=xyz.penpencil.unigo&hl=en_IN",
+      appStore: "https://apps.apple.com/in/app/acadfly-study-abroad/id6737373703"
     },
     company: "PhysicsWallah"
   },
