@@ -174,7 +174,7 @@ export const projects = [
     name: "AcadFly",
     description: "Study Abroad Platform built from scratch with Kotlin Multiplatform. Achieved 85% code sharing between Android and iOS, resulting in faster development and consistent UX.",
     image: "https://play-lh.googleusercontent.com/UTBbl7ZiI-gXLtij7LqzFVk1R6HhwI9dqT9IYUt7fyjoz3eFfxxjhrTFmQ6y-p2cgrk=w240-h480-rw",
-    technologies: ["KMP", "Compose Multiplatform", "Ktor", "Koin", "MVVM"],
+    technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Ktor", "Koin", "MVVM"],
     metrics: {
       downloads: "10K+",
       rating: "4.0",
