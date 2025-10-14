@@ -24,7 +24,7 @@ const ServicesCarousel = ({ services }) => {
     
     const interval = setInterval(() => {
       handleNext();
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [isAutoPlaying, services.length, currentIndex]);
@@ -34,7 +34,7 @@ const ServicesCarousel = ({ services }) => {
     setIsTransitioning(true);
     const maxIndex = services.length - 1;
     setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-    setTimeout(() => setIsTransitioning(false), 500);
+    setTimeout(() => setIsTransitioning(false), 800);
   };
 
   const handlePrev = () => {
@@ -43,7 +43,7 @@ const ServicesCarousel = ({ services }) => {
     setIsTransitioning(true);
     const maxIndex = services.length - 1;
     setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
-    setTimeout(() => setIsTransitioning(false), 500);
+    setTimeout(() => setIsTransitioning(false), 800);
   };
 
   const goToNext = () => {
