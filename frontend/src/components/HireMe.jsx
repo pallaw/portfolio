@@ -76,7 +76,7 @@ const HireMe = () => {
               })}
             </div>
 
-            {/* CTA Buttons */}
+            {/* Primary CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button
                 className="bg-gradient-to-r from-accent-red to-accent-red/80 hover:from-accent-red/90 hover:to-accent-red text-white border-0 shadow-lg shadow-accent-red/20 hover:shadow-accent-red/40 transition-all px-8 py-6 text-lg group"
@@ -87,22 +87,56 @@ const HireMe = () => {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
               
-              <div className="flex gap-4 justify-center">
-                <Button
-                  variant="outline"
-                  className="bg-gray-800/50 hover:bg-gray-800 text-white border-gray-700 hover:border-accent-red/50 transition-all px-6 py-6"
-                  onClick={() => window.open(personalInfo.linkedin, '_blank')}
-                >
-                  <Linkedin size={20} />
-                </Button>
-                <Button
-                  variant="outline"
-                  className="bg-gray-800/50 hover:bg-gray-800 text-white border-gray-700 hover:border-accent-red/50 transition-all px-6 py-6"
-                  onClick={() => window.open(personalInfo.github, '_blank')}
-                >
-                  <Github size={20} />
-                </Button>
-              </div>
+              <Button
+                className="bg-gradient-to-r from-accent-purple to-accent-purple/80 hover:from-accent-purple/90 hover:to-accent-purple text-white border-0 shadow-lg shadow-accent-purple/20 hover:shadow-accent-purple/40 transition-all px-8 py-6 text-lg group"
+                onClick={() => setIsCalendlyOpen(true)}
+              >
+                <Calendar className="mr-2" size={20} />
+                Schedule a Call
+              </Button>
+            </div>
+
+            {/* Secondary Contact Options */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4">
+              <Button
+                variant="outline"
+                className="bg-gray-800/50 hover:bg-gray-800 text-white border-gray-700 hover:border-accent-red/50 transition-all py-6 flex-col h-auto gap-2"
+                onClick={handleLinkedInMessage}
+                title="Send LinkedIn message"
+              >
+                <Linkedin size={24} className="text-[#0A66C2]" />
+                <span className="text-xs text-gray-400">LinkedIn</span>
+              </Button>
+              
+              <Button
+                variant="outline"
+                className="bg-gray-800/50 hover:bg-gray-800 text-white border-gray-700 hover:border-accent-red/50 transition-all py-6 flex-col h-auto gap-2"
+                onClick={handleWhatsApp}
+                title="Chat on WhatsApp"
+              >
+                <MessageCircle size={24} className="text-[#25D366]" />
+                <span className="text-xs text-gray-400">WhatsApp</span>
+              </Button>
+              
+              <Button
+                variant="outline"
+                className="bg-gray-800/50 hover:bg-gray-800 text-white border-gray-700 hover:border-accent-red/50 transition-all py-6 flex-col h-auto gap-2"
+                onClick={() => window.open(personalInfo.github, '_blank')}
+                title="View GitHub profile"
+              >
+                <Github size={24} className="text-white" />
+                <span className="text-xs text-gray-400">GitHub</span>
+              </Button>
+              
+              <Button
+                variant="outline"
+                className="bg-gray-800/50 hover:bg-gray-800 text-white border-gray-700 hover:border-accent-red/50 transition-all py-6 flex-col h-auto gap-2"
+                onClick={() => window.location.href = `mailto:${personalInfo.email}`}
+                title="Send email"
+              >
+                <Mail size={24} className="text-accent-red" />
+                <span className="text-xs text-gray-400">Email</span>
+              </Button>
             </div>
 
             {/* Contact Info */}
