@@ -31,12 +31,9 @@ const Footer = () => {
             })}
           </div>
 
-          <div className="text-center space-y-2">
+          <div className="text-center">
             <p className="text-gray-400 text-sm">
               © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
-            </p>
-            <p className="text-gray-500 text-xs flex items-center justify-center gap-1">
-              Built with <Heart className="text-accent-compose-royal" size={12} fill="currentColor" /> using React & FastAPI
             </p>
           </div>
         </div>
