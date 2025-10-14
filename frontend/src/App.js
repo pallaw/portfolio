@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { md3Theme } from './theme/md3Theme';
 import './App.css';
 import './styles/fonts.css';
 import Header from './components/Header';
@@ -33,19 +35,22 @@ function App() {
   }, []);
 
   return (
-    <div className="App bg-black min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Blog />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider theme={md3Theme}>
+      <CssBaseline />
+      <div className=\"App\" style={{ backgroundColor: '#0D0D0D', minHeight: '100vh' }}>
+        <Header />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Skills />
+          <Projects />
+          <Blog />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
