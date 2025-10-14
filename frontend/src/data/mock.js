@@ -67,7 +67,7 @@ export const experience = [
     duration: "Aug 2023 - Dec 2024",
     location: "India",
     responsibilities: [
-      "Developed AcadFly from scratch with KMP (85% shared code across Android & iOS); achieved 10K+ downloads, 4.0 rating",
+      "Developed AcadFly from scratch with Kotlin Multiplatform (KMP) (85% shared code across Android & iOS); achieved 10K+ downloads, 4.0 rating",
       "Led Android development for CuriousJunior with 1M+ downloads and 4.6 rating",
       "Refactored legacy codebase using multi-module architecture, reducing build times by 30%",
       "Mentored teams in Kotlin Multiplatform development"
