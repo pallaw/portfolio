@@ -4,8 +4,8 @@ import { Button } from './ui/button';
 import { personalInfo } from '../data/mock';
 
 const Hero = () => {
-  const scrollToContact = () => {
-    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToCollaborate = () => {
+    document.querySelector('#hire')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
