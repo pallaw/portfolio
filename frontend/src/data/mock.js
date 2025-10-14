@@ -217,7 +217,7 @@ export const projects = [
     company: "PhysicsWallah"
   },
   {
-    id: 3,
+    id: 4,
     name: "HubOps by Shipsy",
     description: "Middle-mile logistics management app. Integrated HHT barcode scanning, reducing processing time by 40%. Improved crash-free users from 75% to 93%.",
     image: "https://play-lh.googleusercontent.com/placeholder-hubops",
