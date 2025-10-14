@@ -22,10 +22,10 @@ const Footer = () => {
                   href={social.link}
                   target={social.label === 'Email' ? '_self' : '_blank'}
                   rel="noopener noreferrer"
-                  className="p-3 bg-gray-900/50 rounded-lg border border-gray-800 hover:border-cyan-500/50 hover:bg-cyan-500/10 transition-all duration-300 hover:scale-110"
+                  className="p-3 bg-gray-900/50 rounded-lg border border-gray-800 hover:border-accent-red/50 hover:bg-accent-red/10 transition-all duration-300 hover:scale-110"
                   aria-label={social.label}
                 >
-                  <Icon className="text-gray-400 hover:text-cyan-400 transition-colors" size={20} />
+                  <Icon className="text-gray-400 hover:text-accent-red transition-colors" size={20} />
                 </a>
               );
             })}
@@ -36,7 +36,7 @@ const Footer = () => {
               © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
             </p>
             <p className="text-gray-500 text-xs flex items-center justify-center gap-1">
-              Built with <Heart className="text-red-500" size={12} fill="currentColor" /> using React & FastAPI
+              Built with <Heart className="text-accent-red" size={12} fill="currentColor" /> using React & FastAPI
             </p>
           </div>
         </div>

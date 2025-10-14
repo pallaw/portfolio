@@ -10,28 +10,28 @@ const Contact = () => {
       label: 'Email',
       value: personalInfo.email,
       link: `mailto:${personalInfo.email}`,
-      color: 'cyan'
+      color: 'red'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
       value: 'Connect on LinkedIn',
       link: personalInfo.linkedin,
-      color: 'blue'
+      color: 'purple'
     },
     {
       icon: Github,
       label: 'GitHub',
       value: 'View My Code',
       link: personalInfo.github,
-      color: 'cyan'
+      color: 'red'
     },
     {
       icon: Phone,
       label: 'Phone',
       value: personalInfo.phone,
       link: `tel:${personalInfo.phone}`,
-      color: 'blue'
+      color: 'purple'
     }
   ];
 
@@ -41,7 +41,7 @@ const Contact = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Let's Connect</h2>
-            <div className="w-20 h-1 bg-cyan-500 mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
               I'm always open to discussing new projects, opportunities, or just having a chat about technology
             </p>
@@ -53,14 +53,14 @@ const Contact = () => {
               return (
                 <Card
                   key={index}
-                  className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
+                  className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-105 p-6 cursor-pointer"
                   onClick={() => window.open(method.link, method.label === 'Email' || method.label === 'Phone' ? '_self' : '_blank')}
                 >
                   <div className="flex flex-col items-center text-center space-y-3">
                     <div className={`p-4 rounded-lg ${
-                      method.color === 'cyan' ? 'bg-cyan-500/10' : 'bg-blue-500/10'
+                      method.color === 'red' ? 'bg-accent-red/10' : 'bg-accent-purple/10'
                     }`}>
-                      <Icon className={method.color === 'cyan' ? 'text-cyan-400' : 'text-blue-400'} size={32} />
+                      <Icon className={method.color === 'red' ? 'text-accent-red' : 'text-accent-purple'} size={32} />
                     </div>
                     <div className="space-y-1">
                       <h3 className="text-lg font-bold text-white">{method.label}</h3>

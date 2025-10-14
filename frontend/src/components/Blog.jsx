@@ -11,7 +11,7 @@ const Blog = () => {
         <div className="space-y-12">
           <div className="text-center space-y-4">
             <h2 className="text-4xl sm:text-5xl font-bold text-white">Blog & Articles</h2>
-            <div className="w-20 h-1 bg-cyan-500 mx-auto"></div>
+            <div className="w-20 h-1 bg-gradient-to-r from-accent-red to-accent-purple mx-auto"></div>
             <p className="text-gray-400 max-w-2xl mx-auto">
               I write about Android development, Kotlin Multiplatform, and mobile architecture on Medium
             </p>
@@ -21,7 +21,7 @@ const Blog = () => {
             {articles.map((article) => (
               <Card
                 key={article.id}
-                className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
+                className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"
                 onClick={() => window.open(article.link, '_blank')}
               >
                 <div className="relative h-48 overflow-hidden bg-gray-800">
@@ -30,14 +30,14 @@ const Blog = () => {
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     onError={(e) => {
-                      e.target.src = 'https://via.placeholder.com/400x300/1a1a1b/06b6d4?text=Article';
+                      e.target.src = 'https://via.placeholder.com/400x300/1a1a1b/ff0d29?text=Article';
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
 
                 <div className="p-6 space-y-3">
-                  <h3 className="text-lg font-bold text-white leading-tight group-hover:text-cyan-400 transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-white leading-tight group-hover:text-accent-red transition-colors line-clamp-2">
                     {article.title}
                   </h3>
 
@@ -63,7 +63,7 @@ const Blog = () => {
           <div className="text-center pt-8">
             <Button
               size="lg"
-              className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-accent-red to-accent-purple hover:opacity-90 text-white font-semibold px-8 py-6 text-base shadow-lg shadow-accent-red/20 hover:shadow-accent-red/40 hover:scale-105 transition-all duration-300"
               onClick={() => window.open('https://medium.com/@pallawpathak', '_blank')}
             >
               View All Articles on Medium
