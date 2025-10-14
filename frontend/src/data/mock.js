@@ -171,6 +171,21 @@ export const skills = {
 export const projects = [
   {
     id: 1,
+    name: "PayPay",
+    description: "Japan's leading mobile payment platform. Contributed to SDK development, implemented Gift Voucher Grant feature, and won PayPay India Hackathon for SmaToshi - a goal-based micro-investment feature.",
+    image: "https://play-lh.googleusercontent.com/qMCW-FpJ1KxzN1Ql5rDRdGK8-r6xPLJxQi9QZdqQJxF2t8j9dK7qK8pK9qK7qK8p=w240-h480-rw",
+    technologies: ["Kotlin", "GitHub Actions", "CI/CD", "Android SDK"],
+    metrics: {
+      downloads: "10M+",
+      rating: "4.5"
+    },
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=jp.ne.paypay.android.app&hl=en_IN"
+    },
+    company: "PayPay India"
+  },
+  {
+    id: 2,
     name: "AcadFly",
     description: "Study Abroad Platform built from scratch with Kotlin Multiplatform. Achieved 85% code sharing between Android and iOS, resulting in faster development and consistent UX.",
     image: "https://play-lh.googleusercontent.com/UTBbl7ZiI-gXLtij7LqzFVk1R6HhwI9dqT9IYUt7fyjoz3eFfxxjhrTFmQ6y-p2cgrk=w240-h480-rw",
@@ -186,7 +201,7 @@ export const projects = [
     company: "PhysicsWallah"
   },
   {
-    id: 2,
+    id: 3,
     name: "PhysicsWallah",
     description: "Core contributor to India's leading EdTech platform. Worked on critical features, performance optimization, and architecture improvements for the main application.",
     image: "https://play-lh.googleusercontent.com/x5_bJXO_-4zH95U6-GSmZPHWX7iFe1JPmfGe26kV2fVrZS5Ebi7L_VFIOopAQ3XBDg=w240-h480-rw",
