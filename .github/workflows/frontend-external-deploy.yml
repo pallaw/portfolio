@@ -40,8 +40,7 @@ jobs:
         with:
           personal_token: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
           external_repository: pallaw/pallaw.github.io
-          publish_branch: main
+          publish_branch: gh-pages
           publish_dir: frontend/build
-          commit_message: chore: deploy front-end from portfolio-1
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
