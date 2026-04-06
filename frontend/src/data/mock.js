@@ -2,9 +2,9 @@
 
 export const personalInfo = {
   name: "Pallaw Pathak",
-  title: "Senior Android Engineer | Kotlin & Compose Multiplatform Expert",
-  subtitle: "10+ Years Experience | Kotlin Multiplatform (KMP) & Cross-Platform Architecture Specialist",
-  bio: "Senior Android Engineer with over 10 years of experience specializing in Kotlin Multiplatform (KMP) and Compose Multiplatform (CMP). Proven expertise in designing clean, scalable architecture using patterns like MVVM and MVI, and optimizing app performance across platforms.",
+  title: "Senior Mobile Engineer | Mobile Architecture | Platform Engineering | Kotlin Multiplatform",
+  subtitle: "10+ Years Experience | Mobile Architecture, Platform Engineering & Kotlin Multiplatform Specialist",
+  bio: "Senior Mobile Engineer with 10+ years of experience building scalable mobile systems across Android and cross-platform ecosystems. Specialized in mobile architecture, Kotlin Multiplatform, and platform engineering, with a focus on modular design, developer productivity, and system scalability. Experienced in working on high-scale applications (up to 100M+ downloads) and improving performance and stability across fintech, edtech, logistics, and consumer platforms, with recent work in mobile observability (OpenTelemetry, Embrace, SigNoz) and AI-assisted development workflows.",
   profileImage: "https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/zv3h7a9v_profile-pic%20%283%29.png",
   email: "pallaw.pathak@gmail.com",
   phone: "+917696487712",
@@ -18,7 +18,7 @@ export const personalInfo = {
 };
 
 export const about = {
-  description: "I'm a Senior Android Engineer with a passion for building scalable, cross-platform mobile applications. With over a decade of experience, I specialize in Kotlin Multiplatform and Compose Multiplatform, enabling seamless code sharing across Android and iOS. I've led the development of high-impact apps with millions of downloads, focusing on clean architecture, performance optimization, and team mentorship.",
+  description: "I'm a Senior Mobile Engineer with a passion for building scalable mobile systems across Android and cross-platform ecosystems. With over a decade of experience, I specialize in mobile architecture, Kotlin Multiplatform, and platform engineering — with a focus on modular design, developer productivity, and system scalability. I've worked on high-scale apps with up to 100M+ downloads, with recent work in mobile observability (OpenTelemetry, Embrace, SigNoz) and AI-assisted engineering workflows.",
   highlights: [
     {
       icon: "trophy",
@@ -27,7 +27,7 @@ export const about = {
     },
     {
       icon: "users",
-      title: "5M+ Downloads",
+      title: "100M+ Downloads",
       description: "Across All Projects"
     },
     {
@@ -52,47 +52,81 @@ export const about = {
 export const experience = [
   {
     id: 1,
+    company: "Moniepoint",
+    position: "Senior Mobile Engineer (Platform Team)",
+    duration: "Feb 2026 - Present",
+    location: "Remote",
+    responsibilities: [
+      "Implemented mobile observability using OpenTelemetry (Embrace, SigNoz), improving visibility into app performance, network calls, and production issues",
+      "Improved platform-level instrumentation and debugging workflows, enabling faster issue detection and resolution"
+    ],
+    technologies: ["Kotlin", "OpenTelemetry", "Embrace", "SigNoz", "Platform Engineering"]
+  },
+  {
+    id: 2,
+    company: "Independent Mobile Architecture Consultant",
+    position: "Mobile Architecture Consultant",
+    duration: "Jul 2025 - Jan 2026",
+    location: "Remote",
+    responsibilities: [
+      "Built TipABish, a Kotlin Multiplatform-based live tipping platform, owning end-to-end development from product design (UI/UX) to scalable architecture",
+      "Designed and implemented shared business logic using Kotlin Multiplatform, enabling cross-platform scalability"
+    ],
+    technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Clean Architecture"]
+  },
+  {
+    id: 3,
+    company: "Wiom",
+    position: "Lead Mobile Developer",
+    duration: "May 2025 - Jul 2025",
+    location: "Remote",
+    responsibilities: [
+      "Contributed to mobile architecture discussions for a Flutter-based telecom app, proposing scalable patterns inspired by Clean Architecture and MVI"
+    ],
+    technologies: ["Flutter", "Clean Architecture", "MVI"]
+  },
+  {
+    id: 4,
     company: "PayPay India",
     position: "Senior Software Engineer",
     duration: "Jan 2025 - May 2025",
     location: "Gurugram",
     responsibilities: [
-      "Refactored CI/CD pipelines for the PAI SDK using GitHub Actions, streamlining build and release processes",
-      "Implemented Gift Voucher Grant feature to enhance in-app engagement and user satisfaction",
-      "Winner of PayPay India Hackathon for creating SmaToshi, a goal-based micro-investment feature"
+      "Optimized CI/CD pipelines for mobile SDK development using GitHub Actions, streamlining build and release workflows",
+      "Built SmaToshi, a goal-based micro-investment prototype, winning the internal PayPay Hackathon"
     ],
     technologies: ["Kotlin", "GitHub Actions", "CI/CD", "Clean Architecture", "Multi-Module Architecture"]
   },
   {
-    id: 2,
+    id: 5,
     company: "PhysicsWallah",
     position: "Senior Software Engineer",
     duration: "Aug 2023 - Dec 2024",
     location: "Noida",
     responsibilities: [
-      "Developed AcadFly from scratch with Kotlin Multiplatform (KMP) (85% shared code across Android & iOS); achieved 10K+ downloads, 4.0 rating",
-      "Led Android development for CuriousJunior with 1M+ downloads and 4.6 rating",
-      "Refactored legacy codebase using multi-module architecture, reducing build times by 30%",
-      "Mentored teams in Kotlin Multiplatform development"
+      "Architected and built AcadFly using Kotlin Multiplatform with ~85% shared code across Android and iOS",
+      "Led Android architecture for CuriousJunior (1M+ downloads), modernizing the codebase using multi-module architecture",
+      "Contributed to mobile platforms within the PhysicsWallah ecosystem (100M+ downloads), improving performance and stability at scale",
+      "Reduced build times by ~30% and improved stability to 96%+ crash-free users"
     ],
     technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "MVVM", "MVI", "Multi-module Architecture", "Coroutines"]
   },
   {
-    id: 3,
+    id: 6,
     company: "Shipsy",
     position: "Senior Software Engineer",
-    duration: "Aug 2020 - June 2023",
+    duration: "Aug 2020 - Jun 2023",
     location: "Gurugram",
     responsibilities: [
-      "Refactored 6-year-old legacy Rider App using MVVM and Clean Architecture",
-      "Reduced crash rate by 20% and improved performance by 30%",
-      "Managed HubOps with 10K+ downloads; integrated HHT barcode scanning reducing processing time by 40%",
-      "Increased crash-free users from 75% to 93%"
+      "Led refactoring of a legacy logistics app using Clean Architecture and MVVM, improving scalability and maintainability",
+      "Reduced crash rates by ~20% and improved performance by ~30%",
+      "Implemented barcode scanning (HHT devices), reducing operational processing time by ~40%",
+      "Established internal Android engineering standards and best practices"
     ],
     technologies: ["MVVM", "Clean Architecture", "Kotlin", "RxJava", "Dagger-Hilt"]
   },
   {
-    id: 4,
+    id: 7,
     company: "Small World (Crafts Inc.)",
     position: "Senior Software Engineer",
     duration: "Aug 2019 - Mar 2020",
@@ -104,7 +138,7 @@ export const experience = [
     technologies: ["Kotlin", "MVVM", "Retrofit", "Firebase"]
   },
   {
-    id: 5,
+    id: 8,
     company: "XBios",
     position: "Software Engineer",
     duration: "Sep 2017 - Jul 2019",
@@ -116,7 +150,7 @@ export const experience = [
     technologies: ["Java", "Android", "SDK Development"]
   },
   {
-    id: 6,
+    id: 9,
     company: "Recon AppMagic",
     position: "Software Engineer",
     duration: "May 2015 - Aug 2017",
@@ -149,28 +183,35 @@ export const skills = {
     "MVI",
     "Clean Architecture",
     "Multi-module Architecture",
-    "Modular Architecture"
+    "Modular Architecture",
+    "Scalable Systems"
   ],
   libraries: [
     "Retrofit",
     "Ktor",
     "Room",
     "Dagger-Hilt",
-    "Koin"
+    "Koin",
+    "REST APIs",
+    "Kotest"
   ],
   tools: [
     "GitHub Actions",
     "CI/CD",
     "Git",
-    "Figma",
     "Firebase",
     "Crashlytics",
+    "OpenTelemetry",
+    "Embrace",
+    "SigNoz",
     "JUnit",
     "MockK"
   ],
   practices: [
     "Mobile DevOps",
-    "Agile",
+    "Build Optimization",
+    "Mobile Observability",
+    "AI-assisted Workflows",
     "Code Review",
     "Mentorship"
   ]
@@ -179,8 +220,20 @@ export const skills = {
 export const projects = [
   {
     id: 1,
+    name: "TipABish",
+    description: "🚧 In Progress — Not yet live. Kotlin Multiplatform-based live tipping platform built end-to-end as an independent consultant. Owned product design (UI/UX) and scalable architecture with ~85% shared business logic across Android and iOS.",
+    image: "/tipabish-logo.png",
+    technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Clean Architecture", "Ktor", "Koin"],
+    metrics: {
+      downloads: "In Progress"
+    },
+    links: {},
+    company: "Independent"
+  },
+  {
+    id: 3,
     name: "PayPay",
-    description: "Japan's leading mobile payment platform. Contributed to SDK development, implemented Gift Voucher Grant feature, and won PayPay India Hackathon for SmaToshi - a goal-based micro-investment feature.",
+    description: "Japan's leading mobile payment platform. Contributed to SDK development and CI/CD pipeline optimization; built SmaToshi, a goal-based micro-investment prototype that won the internal PayPay Hackathon.",
     image: "https://play-lh.googleusercontent.com/AieC1ypSSh_2rctvrNtVggyFRP9cNtvnEIPkVmzZGFlhN8bNdHCl3GZbxK7O8vCe7A=w240-h480-rw",
     technologies: ["Kotlin", "GitHub Actions", "CI/CD", "Android SDK"],
     metrics: {
@@ -193,9 +246,9 @@ export const projects = [
     company: "PayPay India"
   },
   {
-    id: 2,
+    id: 4,
     name: "AcadFly",
-    description: "Study Abroad Platform built from scratch with Kotlin Multiplatform. Achieved 85% code sharing between Android and iOS, resulting in faster development and consistent UX.",
+    description: "Study Abroad Platform built from scratch with Kotlin Multiplatform. Achieved ~85% code sharing between Android and iOS, resulting in faster development and consistent UX.",
     image: "https://play-lh.googleusercontent.com/UTBbl7ZiI-gXLtij7LqzFVk1R6HhwI9dqT9IYUt7fyjoz3eFfxxjhrTFmQ6y-p2cgrk=w240-h480-rw",
     technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Ktor", "Koin", "MVVM"],
     metrics: {
@@ -209,13 +262,13 @@ export const projects = [
     company: "PhysicsWallah"
   },
   {
-    id: 3,
+    id: 5,
     name: "PhysicsWallah",
-    description: "Core contributor to India's leading EdTech platform. Worked on critical features, performance optimization, and architecture improvements for the main application.",
+    description: "Core contributor to India's leading EdTech platform (100M+ downloads). Improved performance, stability, and architecture at scale across the PhysicsWallah mobile ecosystem.",
     image: "https://play-lh.googleusercontent.com/x5_bJXO_-4zH95U6-GSmZPHWX7iFe1JPmfGe26kV2fVrZS5Ebi7L_VFIOopAQ3XBDg=w240-h480-rw",
     technologies: ["Kotlin", "Jetpack Compose", "Multi-module", "Coroutines", "Clean Architecture"],
     metrics: {
-      downloads: "10M+",
+      downloads: "100M+",
       rating: "4.6"
     },
     links: {
@@ -225,9 +278,9 @@ export const projects = [
     company: "PhysicsWallah"
   },
   {
-    id: 4,
+    id: 6,
     name: "HubOps by Shipsy",
-    description: "Middle-mile logistics management app. Integrated HHT barcode scanning, reducing processing time by 40%. Improved crash-free users from 75% to 93%.",
+    description: "Middle-mile logistics management app. Integrated HHT barcode scanning, reducing processing time by 40%. Improved crash-free users from 75% to 96%+.",
     image: "https://play-lh.googleusercontent.com/aWtMNzMSzvjr-tfORscKwHHPoJfkea-LbnxxKvyosudp7Bj0dIKSbBldpjMSFjo76w4=w240-h480-rw",
     technologies: ["Kotlin", "MVVM", "Barcode Scanning", "Dagger-Hilt", "Retrofit"],
     metrics: {
@@ -240,7 +293,7 @@ export const projects = [
     company: "Shipsy"
   },
   {
-    id: 5,
+    id: 7,
     name: "FieldOps by Shipsy",
     description: "Field operations management solution for logistics teams. Built with scalable architecture and real-time tracking capabilities.",
     image: "https://play-lh.googleusercontent.com/8cbfbn7OYCyDl3jcJm34iuh0qIsGkpqZ92TRCS2tNpJJLaOimgRBmvzlPiPMMMJwQ9ef=w240-h480-rw",
@@ -255,7 +308,7 @@ export const projects = [
     company: "Shipsy"
   },
   {
-    id: 6,
+    id: 8,
     name: "TMS Rider by Shipsy",
     description: "Transportation Management System for delivery partners. Focused on performance optimization and reliability for mission-critical operations.",
     image: "https://play-lh.googleusercontent.com/qjq2WeZkN57elgL1jbzTxc7BJgtj205hKyrzfIg8dEwtrQjCEEzsBOfqCrzfVFE-hg=w240-h480-rw",
@@ -270,7 +323,7 @@ export const projects = [
     company: "Shipsy"
   },
   {
-    id: 7,
+    id: 9,
     name: "OnDemand by Shipsy",
     description: "On-demand delivery management platform. Implemented real-time order tracking and optimized routing algorithms.",
     image: "https://play-lh.googleusercontent.com/iByeglWn9_Q6upqvHjBJ_IAj3fVAQ5amPmkeaAy5JLyXzE9OvyWa7xyPYhCit9vsiQ=w240-h480-rw",
