@@ -18,7 +18,8 @@ export const personalInfo = {
 };
 
 export const about = {
-  description: "I'm a Senior Mobile Engineer with a passion for building scalable mobile systems across Android and cross-platform ecosystems. With over a decade of experience, I specialize in mobile architecture, Kotlin Multiplatform, and platform engineering — with a focus on modular design, developer productivity, and system scalability. I've worked on high-scale apps with up to 100M+ downloads, with recent work in mobile observability (OpenTelemetry, Embrace, SigNoz) and AI-assisted engineering workflows.",
+  description: "I'm a Senior Mobile Engineer with 10+ years of experience building scalable mobile systems across Android and cross-platform ecosystems. I specialize in mobile architecture, Kotlin Multiplatform, and platform engineering — with a focus on modular design, developer productivity, and system scalability. I've shipped apps with up to 100M+ downloads across fintech, edtech, and logistics platforms.",
+  aiStatement: "I build AI-first. I use Claude Code, Cursor, and AI-assisted workflows daily to move faster, write better code, and solve harder problems. AI isn't a tool I occasionally reach for — it's core to how I engineer.",
   highlights: [
     {
       icon: "trophy",
@@ -170,50 +171,44 @@ export const skills = {
     { name: "Kotlin Multiplatform", years: 2, rating: 3, maxRating: 5 },
     { name: "Compose Multiplatform", years: 2, rating: 3, maxRating: 5 }
   ],
-  frameworks: [
-    "Kotlin Multiplatform (KMP)",
-    "Compose Multiplatform (CMP)",
-    "Jetpack Compose",
-    "Coroutines",
-    "Flow",
-    "RxJava"
-  ],
-  architecture: [
-    "MVVM",
-    "MVI",
-    "Clean Architecture",
-    "Multi-module Architecture",
-    "Modular Architecture",
-    "Scalable Systems"
-  ],
-  libraries: [
-    "Retrofit",
-    "Ktor",
-    "Room",
-    "Dagger-Hilt",
-    "Koin",
-    "REST APIs",
-    "Kotest"
-  ],
-  tools: [
-    "GitHub Actions",
-    "CI/CD",
-    "Git",
-    "Firebase",
-    "Crashlytics",
-    "OpenTelemetry",
-    "Embrace",
-    "SigNoz",
-    "JUnit",
-    "MockK"
-  ],
-  practices: [
-    "Mobile DevOps",
-    "Build Optimization",
-    "Mobile Observability",
-    "AI-assisted Workflows",
-    "Code Review",
-    "Mentorship"
+  categories: [
+    {
+      id: "ai",
+      title: "AI-Assisted Engineering",
+      icon: "bot",
+      featured: true,
+      items: ["Claude Code", "Cursor", "AI-assisted Workflows", "Vibe Coding"]
+    },
+    {
+      id: "architecture",
+      title: "Mobile Architecture",
+      icon: "layers",
+      items: ["Clean Architecture", "MVVM", "MVI", "Modular Architecture", "Scalable Systems"]
+    },
+    {
+      id: "crossplatform",
+      title: "Cross-Platform & Android",
+      icon: "smartphone",
+      items: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Jetpack Compose", "Kotlin", "Coroutines", "Flow"]
+    },
+    {
+      id: "platform",
+      title: "Platform Engineering",
+      icon: "git-branch",
+      items: ["CI/CD", "GitHub Actions", "Mobile DevOps", "Build Optimization"]
+    },
+    {
+      id: "observability",
+      title: "Observability",
+      icon: "activity",
+      items: ["OpenTelemetry", "Embrace", "SigNoz", "Firebase Crashlytics"]
+    },
+    {
+      id: "tooling",
+      title: "Data & Tooling",
+      icon: "wrench",
+      items: ["Ktor", "Retrofit", "REST APIs", "Koin", "Dagger-Hilt", "JUnit", "MockK", "Kotest", "Git"]
+    }
   ]
 };
 

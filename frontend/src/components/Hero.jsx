@@ -42,8 +42,8 @@ const Hero = () => {
               </p>
             </div>
 
-            <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
-              {personalInfo.bio}
+            <p className="text-gray-400 text-lg leading-relaxed max-w-xl">
+              {personalInfo.bio.split('.')[0]}.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
