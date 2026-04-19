@@ -15,7 +15,8 @@ const iconMap = {
 
 const ServicesCarousel = ({ services }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+  const [isHovered, setIsHovered] = useState(false);
+
   // Calculate how many items to show based on screen size
   const getItemsToShow = () => {
     if (typeof window !== 'undefined') {
@@ -30,15 +31,21 @@ const ServicesCarousel = ({ services }) => {
 
   // Update items to show on window resize
   React.useEffect(() => {
-    const handleResize = () => {
-      setItemsToShow(getItemsToShow());
-    };
-
+    const handleResize = () => setItemsToShow(getItemsToShow());
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const maxIndex = Math.max(0, services.length - itemsToShow);
+
+  // Auto-scroll every 3s, pause on hover
+  React.useEffect(() => {
+    if (isHovered) return;
+    const id = setInterval(() => {
+      setCurrentIndex(prev => (prev >= maxIndex ? 0 : prev + 1));
+    }, 3000);
+    return () => clearInterval(id);
+  }, [isHovered, maxIndex]);
   const visibleServices = services.slice(currentIndex, currentIndex + itemsToShow);
 
   const goToPrevious = () => {
@@ -54,7 +61,11 @@ const ServicesCarousel = ({ services }) => {
   };
 
   return (
-    <div className="relative px-2 sm:px-4 md:px-8">
+    <div
+      className="relative px-2 sm:px-4 md:px-8"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Section Header */}
       <div className="text-center mb-8">
         <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">

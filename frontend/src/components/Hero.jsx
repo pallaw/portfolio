@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, Mail } from 'lucide-react';
+import { ArrowRight, Download, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { personalInfo } from '../data/mock';
 
@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-black via-gray-950 to-black">
+    <section id="hero" className="min-h-[92vh] flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-black via-gray-950 to-black">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,13,41,0.15),transparent_50%)] pointer-events-none"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(78,22,210,0.12),transparent_50%)] pointer-events-none"></div>
       
@@ -59,7 +59,7 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 className="border-2 border-gray-700 text-white hover:bg-gray-900 hover:border-accent-red font-semibold px-8 py-6 text-base hover:scale-105 transition-all duration-300"
-                onClick={() => window.open('https://customer-assets.emergentagent.com/job_3c2bde26-baa1-4dd6-a6c3-4b7f71bc0705/artifacts/6a2xfnkv_Pallaw_Pathak_Senior_Android_Resume.pdf', '_blank')}
+                onClick={() => window.open('/pallaw_pathak_resume_2026.pdf', '_blank')}
               >
                 <Download className="mr-2" size={20} />
                 Download Resume
@@ -67,6 +67,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce opacity-50">
+        <span className="text-gray-500 text-xs tracking-widest uppercase">Scroll</span>
+        <ChevronDown className="text-gray-500" size={20} />
       </div>
 
       <style jsx>{`

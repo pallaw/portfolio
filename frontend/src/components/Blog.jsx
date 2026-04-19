@@ -18,7 +18,7 @@ const Blog = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {articles.map((article) => (
+            {articles.slice(0, 3).map((article) => (
               <Card
                 key={article.id}
                 className="bg-gray-900/50 border-gray-800 hover:border-accent-red/50 hover:shadow-lg hover:shadow-accent-red/10 transition-all duration-300 hover:scale-102 overflow-hidden group cursor-pointer"

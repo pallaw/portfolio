@@ -20,8 +20,7 @@ const Header = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
     { name: 'Blog', href: '#blog' },
-    { name: 'Collaborate', href: '#hire' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Collaborate', href: '#hire' }
   ];
 
   const scrollToSection = (href) => {

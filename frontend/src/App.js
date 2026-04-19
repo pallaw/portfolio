@@ -10,7 +10,6 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import HireMe from './components/HireMe';
 import HireMeFab from './components/HireMeFab';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -45,7 +44,6 @@ function App() {
         <Projects />
         <Blog />
         <HireMe />
-        <Contact />
       </main>
       <Footer />
       <HireMeFab />

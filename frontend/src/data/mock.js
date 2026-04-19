@@ -216,12 +216,10 @@ export const projects = [
   {
     id: 1,
     name: "TipABish",
-    description: "🚧 In Progress — Not yet live. Kotlin Multiplatform-based live tipping platform built end-to-end as an independent consultant. Owned product design (UI/UX) and scalable architecture with ~85% shared business logic across Android and iOS.",
+    description: "Kotlin Multiplatform-based live tipping platform built end-to-end as an independent consultant. Owned product design (UI/UX) and scalable architecture with ~85% shared business logic across Android and iOS.",
     image: "/tipabish-logo.png",
     technologies: ["Kotlin Multiplatform (KMP)", "Compose Multiplatform (CMP)", "Clean Architecture", "Ktor", "Koin"],
-    metrics: {
-      downloads: "In Progress"
-    },
+    metrics: {},
     links: {},
     company: "Independent"
   },
@@ -339,6 +337,12 @@ export const hireMe = {
   description: "I specialize in building scalable cross-platform mobile applications using Kotlin Multiplatform and Compose Multiplatform. With over a decade of experience delivering high-impact products, I bring deep technical expertise and proven leadership to drive your mobile strategy forward.",
   availability: "Available for consulting & leadership roles",
   cta: "Let's Connect",
+  whyWorkWithMe: [
+    { icon: "clock", stat: "10+ Years", label: "Mobile Engineering" },
+    { icon: "smartphone", stat: "85% Code Share", label: "Kotlin Multiplatform Expert" },
+    { icon: "bot", stat: "AI-First", label: "Claude Code & Cursor Daily" },
+    { icon: "download", stat: "100M+ Downloads", label: "Apps Shipped at Scale" },
+  ],
   services: [
     {
       icon: "code",
@@ -378,6 +382,54 @@ export const hireMe = {
     }
   ]
 };
+
+export const currentWork = [
+  {
+    id: 'moniepoint-personal',
+    name: 'Moniepoint Personal',
+    company: 'Moniepoint',
+    role: 'Full-time',
+    roleLabel: 'Full-time · Platform Team',
+    description: 'Personal banking app serving millions of Africans with seamless digital financial services. Contributing to mobile observability, platform instrumentation, and app stability as part of the Platform Engineering team.',
+    image: '/moniepoint-personal.png',
+    technologies: ['Kotlin', 'OpenTelemetry', 'Embrace', 'SigNoz', 'Platform Engineering'],
+    playStore: 'https://play.google.com/store/apps/details?id=com.moniepoint.personal',
+    appStore: 'https://apps.apple.com/us/app/moniepoint-personal-banking/id6452756675',
+    status: 'active',
+    metrics: { downloads: '1Cr+', rating: '4.6' },
+    badge: 'Contributor',
+  },
+  {
+    id: 'moniepoint-business',
+    name: 'Moniepoint Business',
+    company: 'Moniepoint',
+    role: 'Full-time',
+    roleLabel: 'Full-time · Platform Team',
+    description: 'Business banking solution for merchants and enterprises across Africa. Working on platform-level reliability, observability tooling, and performance improvements that impact production stability.',
+    image: '/moniepoint-business.png',
+    technologies: ['Kotlin', 'OpenTelemetry', 'Platform Engineering', 'Mobile DevOps'],
+    playStore: 'https://play.google.com/store/apps/details?id=com.moniepoint.business',
+    appStore: 'https://apps.apple.com/us/app/moniepoint-business-banking/id1661134941',
+    status: 'active',
+    metrics: { downloads: '1Cr+', rating: '4.6' },
+    badge: 'Contributor',
+  },
+  {
+    id: 'tipabish',
+    name: 'TipABish',
+    company: 'Independent',
+    role: 'Part-time',
+    roleLabel: 'Part-time · Independent',
+    description: 'Kotlin Multiplatform live tipping platform built end-to-end as an independent project. Owning product design (UI/UX) and scalable architecture with ~85% shared business logic across Android and iOS.',
+    image: '/tipabish-logo.png',
+    technologies: ['Kotlin Multiplatform (KMP)', 'Compose Multiplatform (CMP)', 'Clean Architecture', 'Ktor'],
+    playStore: null,
+    appStore: null,
+    status: 'in-progress',
+    metrics: {},
+    badge: 'Solo Project',
+  },
+];
 
 export const articles = [
   {
